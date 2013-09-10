@@ -28,8 +28,9 @@
 	// Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(newProject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+   
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,6 +39,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)newProject:(id)sender{
+   [self performSegueWithIdentifier:@"mySegue" sender:self];  
+}
 - (void)insertNewObject:(id)sender
 {
     if (!_objects) {

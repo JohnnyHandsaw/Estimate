@@ -19,6 +19,8 @@
 		168E7B4F17D5D36600D7BD16 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 168E7B4D17D5D36600D7BD16 /* MainStoryboard.storyboard */; };
 		168E7B5217D5D36600D7BD16 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 168E7B5117D5D36600D7BD16 /* MasterViewController.m */; };
 		168E7B5517D5D36600D7BD16 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 168E7B5417D5D36600D7BD16 /* DetailViewController.m */; };
+		168E7B6217D6FB0400D7BD16 /* StaticTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 168E7B6117D6FB0400D7BD16 /* StaticTableViewController.m */; };
+		16CDFF9E17D84B4500D4B276 /* OptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CDFF9D17D84B4500D4B276 /* OptionsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,10 @@
 		168E7B5117D5D36600D7BD16 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		168E7B5317D5D36600D7BD16 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		168E7B5417D5D36600D7BD16 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		168E7B6017D6FB0400D7BD16 /* StaticTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StaticTableViewController.h; path = ../StaticTableViewController.h; sourceTree = "<group>"; };
+		168E7B6117D6FB0400D7BD16 /* StaticTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StaticTableViewController.m; path = ../StaticTableViewController.m; sourceTree = "<group>"; };
+		16CDFF9C17D84B4500D4B276 /* OptionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsTableViewController.h; sourceTree = "<group>"; };
+		16CDFF9D17D84B4500D4B276 /* OptionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,13 +92,8 @@
 		168E7B3B17D5D36600D7BD16 /* Estimate */ = {
 			isa = PBXGroup;
 			children = (
-				168E7B4417D5D36600D7BD16 /* AppDelegate.h */,
-				168E7B4517D5D36600D7BD16 /* AppDelegate.m */,
-				168E7B4D17D5D36600D7BD16 /* MainStoryboard.storyboard */,
-				168E7B5017D5D36600D7BD16 /* MasterViewController.h */,
-				168E7B5117D5D36600D7BD16 /* MasterViewController.m */,
-				168E7B5317D5D36600D7BD16 /* DetailViewController.h */,
-				168E7B5417D5D36600D7BD16 /* DetailViewController.m */,
+				168E7B5C17D5D39800D7BD16 /* Model */,
+				168E7B5B17D5D39300D7BD16 /* GUI */,
 				168E7B3C17D5D36600D7BD16 /* Supporting Files */,
 			);
 			path = Estimate;
@@ -110,6 +111,31 @@
 				168E7B4B17D5D36600D7BD16 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		168E7B5B17D5D39300D7BD16 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				168E7B4417D5D36600D7BD16 /* AppDelegate.h */,
+				168E7B4517D5D36600D7BD16 /* AppDelegate.m */,
+				168E7B4D17D5D36600D7BD16 /* MainStoryboard.storyboard */,
+				168E7B5017D5D36600D7BD16 /* MasterViewController.h */,
+				168E7B5117D5D36600D7BD16 /* MasterViewController.m */,
+				168E7B5317D5D36600D7BD16 /* DetailViewController.h */,
+				168E7B5417D5D36600D7BD16 /* DetailViewController.m */,
+				168E7B6017D6FB0400D7BD16 /* StaticTableViewController.h */,
+				168E7B6117D6FB0400D7BD16 /* StaticTableViewController.m */,
+				16CDFF9C17D84B4500D4B276 /* OptionsTableViewController.h */,
+				16CDFF9D17D84B4500D4B276 /* OptionsTableViewController.m */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		168E7B5C17D5D39800D7BD16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +208,8 @@
 				168E7B4617D5D36600D7BD16 /* AppDelegate.m in Sources */,
 				168E7B5217D5D36600D7BD16 /* MasterViewController.m in Sources */,
 				168E7B5517D5D36600D7BD16 /* DetailViewController.m in Sources */,
+				168E7B6217D6FB0400D7BD16 /* StaticTableViewController.m in Sources */,
+				16CDFF9E17D84B4500D4B276 /* OptionsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +332,7 @@
 				168E7B5A17D5D36600D7BD16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
