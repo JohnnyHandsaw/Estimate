@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class Estimate;
+
 @interface OptionsTableViewController : UITableViewController
 {
     NSMutableArray *options;
+    Estimate * estimate;
     //NSNumber *alumination;
 //    NSNumber *builtUpGIC;
 //    NSNumber *builtUpGIS;
@@ -24,6 +27,7 @@
 //    NSNumber *singleTPO;
 //    NSNumber *torch;
 }
+@property (strong, nonatomic) Estimate * estimate;
 
 @property (nonatomic) NSUInteger alumination;
 @property (nonatomic) NSUInteger builtUpGIC;

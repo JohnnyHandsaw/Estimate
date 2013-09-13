@@ -9,6 +9,10 @@
 #import "MasterViewController.h"
 
 #import "DetailViewController.h"
+#import "OptionsTableViewController.h"
+#import "Estimate.h"
+
+@class Estimate;
 
 @interface MasterViewController () {
     NSMutableArray *_objects;
@@ -111,6 +115,10 @@
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSDate *object = _objects[indexPath.row];
         [[segue destinationViewController] setDetailItem:object];
+    }
+    if ([[segue identifier] isEqualToString:@"mySegue"]){
+        Estimate *estimate = [[Estimate alloc]init];
+        [[segue destinationViewController] setEstimate:estimate];
     }
 }
 

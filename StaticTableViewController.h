@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Estimate;
 
 @interface StaticTableViewController : UITableViewController<UITextFieldDelegate, UIPickerViewDelegate,UIPickerViewDataSource> {
     
@@ -15,7 +16,7 @@
     NSMutableArray *cityOptions;
     NSMutableArray *deckTypeArray;
 }
-
+@property (strong, nonatomic) Estimate * estimate;
 @property (strong, nonatomic) NSArray *optionsArray;
 @property (strong, nonatomic) NSArray *deckTypeArray;
 @property (nonatomic) UIPickerView *pickerView;

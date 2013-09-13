@@ -8,6 +8,23 @@
 
 #import "OptionsTableViewController.h"
 #import "StaticTableViewController.h"
+#import "Estimate.h"
+#import "Options.h"
+#import "Common.h"
+#import "Alumination.h"
+#import "BuiltUpPlyGNS.h"
+#import "BuiltUpPlyGIS.h"
+#import "BuiltUpPlyGIC.h"
+#import "BuiltUpFileGNC.h"
+#import "BuiltUpFileGNC.h"
+#import "Coatings.h"
+#import "DuroLast.h"
+#import "ThreePlyCold.h"
+#import "Foam.h"
+#import "SinglePlyTPO.h"
+#import "SinglePlyPVC.h"
+#import "Torch.h"
+
 
 @interface OptionsTableViewController (  )
 
@@ -16,6 +33,7 @@
 
 @implementation OptionsTableViewController
 
+@synthesize estimate;
 @synthesize alumination;
 @synthesize builtUpGIC;
 @synthesize builtUpGIS;
@@ -44,14 +62,34 @@
 #define ROW_singleTPO 10
 #define ROW_torch 11
 
-- (id)initWithStyle:(UITableViewStyle)style
+- (void)setEstimate:(id)newEstimate
 {
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
+    NSLog(@"setEstimate");
+    NSLog(@"estimate %@", newEstimate);
+    if (estimate != newEstimate) {
+        estimate = newEstimate;
+        // Update the view.
+        [self configureView];
     }
-    return self;
 }
+
+- (void)configureView
+{
+    NSLog(@"estimate %@", estimate);
+}
+//- (id)initWithStyle:(UITableViewStyle)style
+//{
+//    self = [super initWithStyle:style];
+//    if (self) {
+//        // Custom initialization
+//    }
+//    
+//    if(self.estimate)
+//    {
+//        self.alumination = self
+//    }
+//    return self;
+//}
 
 - (void)viewDidLoad
 {
@@ -150,53 +188,53 @@
     switch (section)
     {
         case SECTION_OPTIONS:
-            if (row == ROW_alumination && alumination == 1)
+            if (row == ROW_alumination &&  estimate.dataOptions.alumination == 1)
             {
                // NSLog(@"load 1");
                cell.accessoryType = UITableViewCellAccessoryCheckmark;
             }
-            if (row == ROW_builtUpGIC && builtUpGIC == 1)
+            if (row == ROW_builtUpGIC && estimate.dataOptions.builtUpGIC == 1)
             {
                // NSLog(@"load 2");
                 cell.accessoryType = UITableViewCellAccessoryCheckmark;
             }
-            if (row == ROW_builtUpGIS && builtUpGIS == 1)
+            if (row == ROW_builtUpGIS && estimate.dataOptions.builtUpGIS == 1)
             {
                 cell.accessoryType = UITableViewCellAccessoryCheckmark;
             }
-            if (row == ROW_builtUpGNC && builtUpGNC == 1)
+            if (row == ROW_builtUpGNC && estimate.dataOptions.builtUpGNC == 1)
             {
                 cell.accessoryType = UITableViewCellAccessoryCheckmark;
             }
-            if (row == ROW_builtUpGNS && builtUpGNS == 1)
+            if (row == ROW_builtUpGNS && estimate.dataOptions.builtUpGNS == 1)
             {
                 cell.accessoryType = UITableViewCellAccessoryCheckmark;
             }
-            if (row == ROW_coatings && coatings == 1)
+            if (row == ROW_coatings && estimate.dataOptions.coatings == 1)
             {
                 cell.accessoryType = UITableViewCellAccessoryCheckmark;
             }
-            if (row == ROW_duroLast && duroLast == 1)
+            if (row == ROW_duroLast && estimate.dataOptions.duroLast == 1)
             {
                 cell.accessoryType = UITableViewCellAccessoryCheckmark;
             }
-            if (row == ROW_threePly && threePly == 1)
+            if (row == ROW_threePly && estimate.dataOptions.threePly == 1)
             {
                 cell.accessoryType = UITableViewCellAccessoryCheckmark;
             }
-            if (row == ROW_foam && foam == 1)
+            if (row == ROW_foam && estimate.dataOptions.foam == 1)
             {
                 cell.accessoryType = UITableViewCellAccessoryCheckmark;
             }
-            if (row == ROW_singlePVC && singlePVC == 1)
+            if (row == ROW_singlePVC && estimate.dataOptions.singlePVC == 1)
             {
                 cell.accessoryType = UITableViewCellAccessoryCheckmark;
             }
-            if (row == ROW_singleTPO && singleTPO == 1)
+            if (row == ROW_singleTPO && estimate.dataOptions.singleTPO == 1)
             {
                 cell.accessoryType = UITableViewCellAccessoryCheckmark;
             }
-            if (row == ROW_torch && torch == 1)
+            if (row == ROW_torch && estimate.dataOptions.torch == 1)
             {
                 cell.accessoryType = UITableViewCellAccessoryCheckmark;
             }
@@ -217,62 +255,62 @@
             if (row == ROW_alumination)
             {
                  NSLog(@"select 0");
-                if  (alumination == 0){ alumination=1;}else{alumination=0;};
+                if  (estimate.dataOptions.alumination == 0){ estimate.dataOptions.alumination=1;}else{estimate.dataOptions.alumination=0;};
             }
             if (row == ROW_builtUpGIC)
             {
                  NSLog(@"select 1");
-                if  (builtUpGIC == 0){ builtUpGIC=1;}else{builtUpGIC=0;};
+                if  (estimate.dataOptions.builtUpGIC == 0){ estimate.dataOptions.builtUpGIC=1;}else{estimate.dataOptions.builtUpGIC=0;};
             }
             if (row == ROW_builtUpGIS)
             {
                 NSLog(@"select 2");
-                if  (builtUpGIS == 0){ builtUpGIS=1;}else{builtUpGIS=0;};
+                if  (estimate.dataOptions.builtUpGIS == 0){ estimate.dataOptions.builtUpGIS=1;}else{estimate.dataOptions.builtUpGIS=0;};
             }
             if (row == ROW_builtUpGNC)
             {
                 NSLog(@"select 3");
-                if  (builtUpGNC == 0){ builtUpGNC=1;}else{builtUpGNC=0;};
+                if  (estimate.dataOptions.builtUpGNC == 0){ estimate.dataOptions.builtUpGNC=1;}else{estimate.dataOptions.builtUpGNC=0;};
             }
             if (row == ROW_builtUpGNS)
             {
                 NSLog(@"select 4");
-                if  (builtUpGNS == 0){ builtUpGNS=1;}else{builtUpGNS=0;};
+                if  (estimate.dataOptions.builtUpGNS == 0){ estimate.dataOptions.builtUpGNS=1;}else{estimate.dataOptions.builtUpGNS=0;};
             }
             if (row == ROW_coatings)
             {
                 NSLog(@"select 5");
-                if  (coatings == 0){ coatings=1;}else{coatings=0;};
+                if  (estimate.dataOptions.coatings == 0){ estimate.dataOptions.coatings=1;}else{estimate.dataOptions.coatings=0;};
             }
             if (row == ROW_duroLast)
             {
                 NSLog(@"select 6");
-                if  (duroLast == 0){ duroLast=1;}else{duroLast=0;};
+                if  (estimate.dataOptions.duroLast == 0){ estimate.dataOptions.duroLast=1;}else{estimate.dataOptions.duroLast=0;};
             }
             if (row == ROW_threePly)
             {
                 NSLog(@"select 7");
-                if  (threePly == 0){ threePly=1;}else{threePly=0;};
+                if  (estimate.dataOptions.threePly == 0){ estimate.dataOptions.threePly=1;}else{estimate.dataOptions.threePly=0;};
             }
             if (row == ROW_foam)
             {
                 NSLog(@"select 8");
-                if  (foam == 0){ foam=1;}else{foam=0;};
+                if  (estimate.dataOptions.foam == 0){ estimate.dataOptions.foam=1;}else{estimate.dataOptions.foam=0;};
             }
             if (row == ROW_singlePVC)
             {
                 NSLog(@"select 9");
-                if  (singlePVC == 0){ singlePVC=1;}else{singlePVC=0;};
+                if  (estimate.dataOptions.singlePVC == 0){ estimate.dataOptions.singlePVC=1;}else{estimate.dataOptions.singlePVC=0;};
             }
             if (row == ROW_singleTPO)
             {
                 NSLog(@"select 10");
-                if  (singleTPO == 0){ singleTPO=1;}else{singleTPO=0;};
+                if  (estimate.dataOptions.singleTPO == 0){ estimate.dataOptions.singleTPO=1;}else{estimate.dataOptions.singleTPO=0;};
             }
             if (row == ROW_torch)
             {
                 NSLog(@"select 11");
-                if  (torch == 0){ torch=1;}else{torch=0;};
+                if  (estimate.dataOptions.torch == 0){ estimate.dataOptions.torch=1;}else{estimate.dataOptions.torch=0;};
             }
             break;
         case 1:
@@ -296,22 +334,25 @@
 {
     StaticTableViewController *staticController =segue.destinationViewController;
     
-    options = [[NSMutableArray alloc]init];
     
-    [options addObject:[NSNumber numberWithUnsignedInt:(alumination) ]];
-    [options addObject:[NSNumber numberWithUnsignedInt:(builtUpGIC) ]];
-    [options addObject:[NSNumber numberWithUnsignedInt:(builtUpGIS) ]];
-    [options addObject:[NSNumber numberWithUnsignedInt:(builtUpGNC) ]];
-    [options addObject:[NSNumber numberWithUnsignedInt:(builtUpGNS) ]];
-    [options addObject:[NSNumber numberWithUnsignedInt:(coatings) ]];
-    [options addObject:[NSNumber numberWithUnsignedInt:(duroLast) ]];
-    [options addObject:[NSNumber numberWithUnsignedInt:(threePly) ]];
-    [options addObject:[NSNumber numberWithUnsignedInt:(foam) ]];
-    [options addObject:[NSNumber numberWithUnsignedInt:(singlePVC) ]];
-    [options addObject:[NSNumber numberWithUnsignedInt:(singleTPO) ]];
-    [options addObject:[NSNumber numberWithUnsignedInt:(torch) ]];
+//    options = [[NSMutableArray alloc]init];
+//    
+//    [options addObject:[NSNumber numberWithUnsignedInt:(alumination) ]];
+//    [options addObject:[NSNumber numberWithUnsignedInt:(builtUpGIC) ]];
+//    [options addObject:[NSNumber numberWithUnsignedInt:(builtUpGIS) ]];
+//    [options addObject:[NSNumber numberWithUnsignedInt:(builtUpGNC) ]];
+//    [options addObject:[NSNumber numberWithUnsignedInt:(builtUpGNS) ]];
+//    [options addObject:[NSNumber numberWithUnsignedInt:(coatings) ]];
+//    [options addObject:[NSNumber numberWithUnsignedInt:(duroLast) ]];
+//    [options addObject:[NSNumber numberWithUnsignedInt:(threePly) ]];
+//    [options addObject:[NSNumber numberWithUnsignedInt:(foam) ]];
+//    [options addObject:[NSNumber numberWithUnsignedInt:(singlePVC) ]];
+//    [options addObject:[NSNumber numberWithUnsignedInt:(singleTPO) ]];
+//    [options addObject:[NSNumber numberWithUnsignedInt:(torch) ]];
   
-    staticController.optionsArray = options;
+  //  staticController.optionsArray = options;
+    staticController.estimate = estimate;
+
 }
 
 

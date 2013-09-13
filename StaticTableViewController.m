@@ -7,12 +7,30 @@
 //
 
 #import "StaticTableViewController.h"
+#import "Estimate.h"
+#import "Options.h"
+#import "Common.h"
+#import "Alumination.h"
+#import "BuiltUpPlyGNS.h"
+#import "BuiltUpPlyGIS.h"
+#import "BuiltUpPlyGIC.h"
+#import "BuiltUpFileGNC.h"
+#import "BuiltUpFileGNC.h"
+#import "Coatings.h"
+#import "DuroLast.h"
+#import "ThreePlyCold.h"
+#import "Foam.h"
+#import "SinglePlyTPO.h"
+#import "SinglePlyPVC.h"
+#import "Torch.h"
 
 @interface StaticTableViewController ()
 
 @end
 
 @implementation StaticTableViewController
+
+@synthesize estimate;
 
 @synthesize optionsArray;
 @synthesize pickerView;
@@ -66,54 +84,54 @@
     // Update the user interface for the detail item.
     
     NSLog(@"ConfigureView");
-    NSLog(@"array: %@", optionsArray);
+    NSLog(@"array: %@", estimate.dataOptions);
 
     
-     if([[optionsArray objectAtIndex:0]integerValue] == 1)
+     if(estimate.dataOptions.alumination == 1)
      {
          NSLog(@"0");
      }
-    if([[optionsArray objectAtIndex:1]integerValue] == 1)
+    if(estimate.dataOptions.builtUpGIC == 1)
     {
         NSLog(@"1");
     }
-    if([[optionsArray objectAtIndex:2]integerValue] == 1)
+    if(estimate.dataOptions.builtUpGIS == 1)
     {
         NSLog(@"2");
     }
-    if([[optionsArray objectAtIndex:3]integerValue] == 1)
+    if(estimate.dataOptions.builtUpGNC == 1)
     {
         NSLog(@"3");
     }
-    if([[optionsArray objectAtIndex:4]integerValue] == 1)
+    if(estimate.dataOptions.builtUpGNS == 1)
     {
         NSLog(@"4");
     }
-    if([[optionsArray objectAtIndex:5]integerValue] == 1)
+    if(estimate.dataOptions.coatings == 1)
     {
         NSLog(@"5");
     }
-    if([[optionsArray objectAtIndex:6]integerValue] == 1)
+    if(estimate.dataOptions.duroLast == 1)
     {
         NSLog(@"6");
     }
-    if([[optionsArray objectAtIndex:7]integerValue] == 1)
+    if(estimate.dataOptions.threePly == 1)
     {
         NSLog(@"7");
     }
-    if([[optionsArray objectAtIndex:8]integerValue] == 1)
+    if(estimate.dataOptions.foam == 1)
     {
         NSLog(@"8");
     }
-    if([[optionsArray objectAtIndex:9]integerValue] == 1)
+    if(estimate.dataOptions.singlePVC == 1)
     {
         NSLog(@"9");
     }
-    if([[optionsArray objectAtIndex:10]integerValue] == 1)
+    if(estimate.dataOptions.singleTPO == 1)
     {
         NSLog(@"10");
     }
-    if([[optionsArray objectAtIndex:11]integerValue] == 1)
+    if(estimate.dataOptions.torch == 1)
     {
         NSLog(@"11");
     }
@@ -126,7 +144,7 @@
     switch (section) {
             
         case SECTION_alumination:
-            if([[optionsArray objectAtIndex:0]integerValue] == 0)
+            if(estimate.dataOptions.alumination == 0)
             {
                 NSLog(@"Hiding section 1");
                 rows = 0;
@@ -135,7 +153,7 @@
                 rows = [super tableView:self.tableView numberOfRowsInSection:section];
             break;
         case SECTION_builtUpGIC:
-            if([[optionsArray objectAtIndex:1]integerValue] == 0)
+            if(estimate.dataOptions.builtUpGIC == 0)
             {
                 rows = 0;
             }
@@ -143,7 +161,7 @@
                 rows = [super tableView:self.tableView numberOfRowsInSection:section];
             break;
         case SECTION_builtUpGIS:
-            if([[optionsArray objectAtIndex:2]integerValue] == 0)
+            if(estimate.dataOptions.builtUpGIS == 0)
             {
                  rows = 0;
             }
@@ -151,7 +169,7 @@
                 rows = [super tableView:self.tableView numberOfRowsInSection:section];
             break;
         case SECTION_builtUpGNC:
-            if([[optionsArray objectAtIndex:3]integerValue] == 0)
+            if(estimate.dataOptions.builtUpGNC == 0)
             {
                  rows = 0;
             }
@@ -159,7 +177,7 @@
                 rows = [super tableView:self.tableView numberOfRowsInSection:section];
             break;
         case SECTION_builtUpGNS:
-            if([[optionsArray objectAtIndex:4]integerValue] == 0)
+            if(estimate.dataOptions.builtUpGNS == 0)
             {
                  rows = 0;
             }
@@ -167,7 +185,7 @@
                 rows = [super tableView:self.tableView numberOfRowsInSection:section];
             break;
         case SECTION_coatings:
-            if([[optionsArray objectAtIndex:5]integerValue] == 0)
+            if(estimate.dataOptions.coatings == 0)
             {
                  rows = 0;
             }
@@ -175,7 +193,7 @@
                 rows = [super tableView:self.tableView numberOfRowsInSection:section];
             break;
         case SECTION_duroLast:
-            if([[optionsArray objectAtIndex:6]integerValue] == 0)
+            if(estimate.dataOptions.duroLast == 0)
             {
                 rows = 0;
             }
@@ -183,7 +201,7 @@
                 rows = [super tableView:self.tableView numberOfRowsInSection:section];
             break;
         case SECTION_threePly:
-            if([[optionsArray objectAtIndex:7]integerValue] == 0)
+            if(estimate.dataOptions.threePly == 0)
             {
                  rows = 0;
             }
@@ -191,7 +209,7 @@
                 rows = [super tableView:self.tableView numberOfRowsInSection:section];
             break;
         case SECTION_foam:
-            if([[optionsArray objectAtIndex:8]integerValue] == 0)
+            if(estimate.dataOptions.foam == 0)
             {
                  rows = 0;
             }
@@ -199,7 +217,7 @@
                 rows = [super tableView:self.tableView numberOfRowsInSection:section];
             break;
         case SECTION_singlePVC:
-            if([[optionsArray objectAtIndex:9]integerValue] == 0)
+            if(estimate.dataOptions.singlePVC == 0)
             {
                  rows = 0;
             }
@@ -207,7 +225,7 @@
                 rows = [super tableView:self.tableView numberOfRowsInSection:section];
             break;
         case SECTION_singleTPO:
-            if([[optionsArray objectAtIndex:10]integerValue] == 0)
+            if(estimate.dataOptions.singleTPO == 0)
             {
                 rows = 0;
             }
@@ -215,7 +233,7 @@
                 rows = [super tableView:self.tableView numberOfRowsInSection:section];
             break;
         case SECTION_torch:
-            if([[optionsArray objectAtIndex:11]integerValue] == 0)
+            if(estimate.dataOptions.torch == 0)
             {
                  rows = 0;
             }
@@ -238,7 +256,7 @@
     switch (section) {
             
         case SECTION_alumination:
-            if([[optionsArray objectAtIndex:0]integerValue] == 0)
+            if(estimate.dataOptions.alumination == 0)
             {
                 NSLog(@"removing header section 1");
                 sectionHeader = nil;
@@ -247,7 +265,7 @@
                 sectionHeader = [super tableView:self.tableView titleForHeaderInSection:section];
             break;
         case SECTION_builtUpGIC:
-            if([[optionsArray objectAtIndex:1]integerValue] == 0)
+            if(estimate.dataOptions.builtUpGIC == 0)
             {
                 sectionHeader = nil;
             }
@@ -255,7 +273,7 @@
                 sectionHeader = [super tableView:self.tableView titleForHeaderInSection:section];
             break;
         case SECTION_builtUpGIS:
-            if([[optionsArray objectAtIndex:2]integerValue] == 0)
+            if(estimate.dataOptions.builtUpGIS == 0)
             {
                 sectionHeader = nil;
             }
@@ -263,7 +281,7 @@
                 sectionHeader = [super tableView:self.tableView titleForHeaderInSection:section];
             break;
         case SECTION_builtUpGNC:
-            if([[optionsArray objectAtIndex:3]integerValue] == 0)
+            if(estimate.dataOptions.builtUpGNC == 0)
             {
                 sectionHeader = nil;
             }
@@ -271,7 +289,7 @@
                 sectionHeader = [super tableView:self.tableView titleForHeaderInSection:section];
             break;
         case SECTION_builtUpGNS:
-            if([[optionsArray objectAtIndex:4]integerValue] == 0)
+            if(estimate.dataOptions.builtUpGNS == 0)
             {
                 sectionHeader = nil;
             }
@@ -279,7 +297,7 @@
                 sectionHeader = [super tableView:self.tableView titleForHeaderInSection:section];
             break;
         case SECTION_coatings:
-            if([[optionsArray objectAtIndex:5]integerValue] == 0)
+            if(estimate.dataOptions.coatings == 0)
             {
                 sectionHeader = nil;
             }
@@ -287,7 +305,7 @@
                 sectionHeader = [super tableView:self.tableView titleForHeaderInSection:section];
             break;
         case SECTION_duroLast:
-            if([[optionsArray objectAtIndex:6]integerValue] == 0)
+            if(estimate.dataOptions.duroLast == 0)
             {
                 sectionHeader = nil;
             }
@@ -295,7 +313,7 @@
                 sectionHeader = [super tableView:self.tableView titleForHeaderInSection:section];
             break;
         case SECTION_threePly:
-            if([[optionsArray objectAtIndex:7]integerValue] == 0)
+            if(estimate.dataOptions.threePly == 0)
             {
                 sectionHeader = nil;
             }
@@ -303,7 +321,7 @@
                 sectionHeader = [super tableView:self.tableView titleForHeaderInSection:section];
             break;
         case SECTION_foam:
-            if([[optionsArray objectAtIndex:8]integerValue] == 0)
+            if(estimate.dataOptions.foam == 0)
             {
                 sectionHeader = nil;
             }
@@ -311,7 +329,7 @@
                 sectionHeader = [super tableView:self.tableView titleForHeaderInSection:section];
             break;
         case SECTION_singlePVC:
-            if([[optionsArray objectAtIndex:9]integerValue] == 0)
+            if(estimate.dataOptions.singlePVC == 0)
             {
                 sectionHeader = nil;
             }
@@ -319,7 +337,7 @@
                 sectionHeader = [super tableView:self.tableView titleForHeaderInSection:section];
             break;
         case SECTION_singleTPO:
-            if([[optionsArray objectAtIndex:10]integerValue] == 0)
+            if(estimate.dataOptions.singleTPO == 0)
             {
                 sectionHeader = nil;
             }
@@ -327,7 +345,7 @@
                 sectionHeader = [super tableView:self.tableView titleForHeaderInSection:section];
             break;
         case SECTION_torch:
-            if([[optionsArray objectAtIndex:11]integerValue] == 0)
+            if(estimate.dataOptions.torch == 0)
             {
                 sectionHeader = nil;
             }
@@ -349,7 +367,7 @@
     switch (section) {
             
         case SECTION_alumination:
-            if([[optionsArray objectAtIndex:0]integerValue] == 0)
+            if(estimate.dataOptions.alumination == 0)
             {
                 NSLog(@"setting height 1");
                 headerHeight = 1;
@@ -358,7 +376,7 @@
                 headerHeight = [super tableView:self.tableView heightForHeaderInSection:section];
             break;
         case SECTION_builtUpGIC:
-            if([[optionsArray objectAtIndex:1]integerValue] == 0)
+            if(estimate.dataOptions.builtUpGIC == 0)
             {
                 headerHeight = 1;
             }
@@ -366,7 +384,7 @@
                 headerHeight = [super tableView:self.tableView heightForHeaderInSection:section];
             break;
         case SECTION_builtUpGIS:
-            if([[optionsArray objectAtIndex:2]integerValue] == 0)
+            if(estimate.dataOptions.builtUpGIS == 0)
             {
                 headerHeight = 1;
             }
@@ -374,7 +392,7 @@
                 headerHeight = [super tableView:self.tableView heightForHeaderInSection:section];
             break;
         case SECTION_builtUpGNC:
-            if([[optionsArray objectAtIndex:3]integerValue] == 0)
+            if(estimate.dataOptions.builtUpGNC == 0)
             {
                 headerHeight = 1;
             }
@@ -382,7 +400,7 @@
                 headerHeight = [super tableView:self.tableView heightForHeaderInSection:section];
             break;
         case SECTION_builtUpGNS:
-            if([[optionsArray objectAtIndex:4]integerValue] == 0)
+            if(estimate.dataOptions.builtUpGNS == 0)
             {
                 headerHeight = 1;
             }
@@ -390,7 +408,7 @@
                 headerHeight = [super tableView:self.tableView heightForHeaderInSection:section];
             break;
         case SECTION_coatings:
-            if([[optionsArray objectAtIndex:5]integerValue] == 0)
+            if(estimate.dataOptions.coatings == 0)
             {
                 headerHeight = 1;
             }
@@ -398,7 +416,7 @@
                 headerHeight = [super tableView:self.tableView heightForHeaderInSection:section];
             break;
         case SECTION_duroLast:
-            if([[optionsArray objectAtIndex:6]integerValue] == 0)
+            if(estimate.dataOptions.duroLast == 0)
             {
                 headerHeight = 1;
             }
@@ -406,7 +424,7 @@
                 headerHeight = [super tableView:self.tableView heightForHeaderInSection:section];
             break;
         case SECTION_threePly:
-            if([[optionsArray objectAtIndex:7]integerValue] == 0)
+            if(estimate.dataOptions.threePly == 0)
             {
                 headerHeight = 1;
             }
@@ -414,7 +432,7 @@
                 headerHeight = [super tableView:self.tableView heightForHeaderInSection:section];
             break;
         case SECTION_foam:
-            if([[optionsArray objectAtIndex:8]integerValue] == 0)
+            if(estimate.dataOptions.foam == 0)
             {
                 headerHeight = 1;
             }
@@ -422,7 +440,7 @@
                 headerHeight = [super tableView:self.tableView heightForHeaderInSection:section];
             break;
         case SECTION_singlePVC:
-            if([[optionsArray objectAtIndex:9]integerValue] == 0)
+            if(estimate.dataOptions.singlePVC == 0)
             {
                 headerHeight = 1;
             }
@@ -430,7 +448,7 @@
                 headerHeight = [super tableView:self.tableView heightForHeaderInSection:section];
             break;
         case SECTION_singleTPO:
-            if([[optionsArray objectAtIndex:10]integerValue] == 0)
+            if(estimate.dataOptions.singleTPO == 0)
             {
                 headerHeight = 1;
             }
@@ -438,7 +456,7 @@
                 headerHeight = [super tableView:self.tableView heightForHeaderInSection:section];
             break;
         case SECTION_torch:
-            if([[optionsArray objectAtIndex:11]integerValue] == 0)
+            if(estimate.dataOptions.torch == 0)
             {
                 headerHeight = 1;
             }
@@ -459,7 +477,7 @@
     switch (section) {
             
         case SECTION_alumination:
-            if([[optionsArray objectAtIndex:0]integerValue] == 0)
+            if(estimate.dataOptions.alumination == 0)
             {
                 NSLog(@"setting height 1");
                 footerHeight = 1;
@@ -468,7 +486,7 @@
                 footerHeight = [super tableView:self.tableView heightForFooterInSection:section];
             break;
         case SECTION_builtUpGIC:
-            if([[optionsArray objectAtIndex:1]integerValue] == 0)
+            if(estimate.dataOptions.builtUpGIC == 0)
             {
                 footerHeight = 1;
             }
@@ -476,7 +494,7 @@
                 footerHeight = [super tableView:self.tableView heightForFooterInSection:section];
             break;
         case SECTION_builtUpGIS:
-            if([[optionsArray objectAtIndex:2]integerValue] == 0)
+            if(estimate.dataOptions.builtUpGIS == 0)
             {
                 footerHeight = 1;
             }
@@ -484,7 +502,7 @@
                 footerHeight = [super tableView:self.tableView heightForFooterInSection:section];
             break;
         case SECTION_builtUpGNC:
-            if([[optionsArray objectAtIndex:3]integerValue] == 0)
+            if(estimate.dataOptions.builtUpGNC == 0)
             {
                 footerHeight = 1;
             }
@@ -492,7 +510,7 @@
                 footerHeight = [super tableView:self.tableView heightForFooterInSection:section];
             break;
         case SECTION_builtUpGNS:
-            if([[optionsArray objectAtIndex:4]integerValue] == 0)
+            if(estimate.dataOptions.builtUpGNS == 0)
             {
                 footerHeight = 1;
             }
@@ -500,7 +518,7 @@
                 footerHeight = [super tableView:self.tableView heightForFooterInSection:section];
             break;
         case SECTION_coatings:
-            if([[optionsArray objectAtIndex:5]integerValue] == 0)
+            if(estimate.dataOptions.coatings == 0)
             {
                 footerHeight = 1;
             }
@@ -508,7 +526,7 @@
                 footerHeight = [super tableView:self.tableView heightForFooterInSection:section];
             break;
         case SECTION_duroLast:
-            if([[optionsArray objectAtIndex:6]integerValue] == 0)
+            if(estimate.dataOptions.duroLast == 0)
             {
                 footerHeight = 1;
             }
@@ -516,7 +534,7 @@
                 footerHeight = [super tableView:self.tableView heightForFooterInSection:section];
             break;
         case SECTION_threePly:
-            if([[optionsArray objectAtIndex:7]integerValue] == 0)
+            if(estimate.dataOptions.threePly == 0)
             {
                 footerHeight = 1;
             }
@@ -524,7 +542,7 @@
                 footerHeight = [super tableView:self.tableView heightForFooterInSection:section];
             break;
         case SECTION_foam:
-            if([[optionsArray objectAtIndex:8]integerValue] == 0)
+            if(estimate.dataOptions.foam == 0)
             {
                 footerHeight = 1;
             }
@@ -532,7 +550,7 @@
                 footerHeight = [super tableView:self.tableView heightForFooterInSection:section];
             break;
         case SECTION_singlePVC:
-            if([[optionsArray objectAtIndex:9]integerValue] == 0)
+            if(estimate.dataOptions.singlePVC == 0)
             {
                 footerHeight = 1;
             }
@@ -540,7 +558,7 @@
                 footerHeight = [super tableView:self.tableView heightForFooterInSection:section];
             break;
         case SECTION_singleTPO:
-            if([[optionsArray objectAtIndex:10]integerValue] == 0)
+            if(estimate.dataOptions.singleTPO == 0)
             {
                 footerHeight = 1;
             }
@@ -548,7 +566,7 @@
                 footerHeight = [super tableView:self.tableView heightForFooterInSection:section];
             break;
         case SECTION_torch:
-            if([[optionsArray objectAtIndex:11]integerValue] == 0)
+            if(estimate.dataOptions.torch == 0)
             {
                 footerHeight = 1;
             }
@@ -577,74 +595,74 @@
     switch (section) {
 
         case SECTION_alumination:
-             if([[optionsArray objectAtIndex:0]integerValue] == 0)
+             if(estimate.dataOptions.alumination == 0)
              {
                  NSLog(@"Hiding section 1");
                  cell.hidden =YES;
              }
             break;
         case SECTION_builtUpGIC:
-            if([[optionsArray objectAtIndex:1]integerValue] == 0)
+            if(estimate.dataOptions.builtUpGIC == 0)
             {
                 cell.hidden =YES;
             }
             break;
         case SECTION_builtUpGIS:
-            if([[optionsArray objectAtIndex:2]integerValue] == 0)
+            if(estimate.dataOptions.builtUpGIS == 0)
             {
                 cell.hidden =YES;
             }
             break;
         case SECTION_builtUpGNC:
-            if([[optionsArray objectAtIndex:3]integerValue] == 0)
+            if(estimate.dataOptions.builtUpGNC == 0)
             {
                 cell.hidden =YES;
             }
             break;
         case SECTION_builtUpGNS:
-            if([[optionsArray objectAtIndex:4]integerValue] == 0)
+            if(estimate.dataOptions.builtUpGNS == 0)
             {
                 cell.hidden =YES;
             }
             break;
         case SECTION_coatings:
-            if([[optionsArray objectAtIndex:5]integerValue] == 0)
+            if(estimate.dataOptions.coatings == 0)
             {
                 cell.hidden =YES;
             }
             break;
         case SECTION_duroLast:
-            if([[optionsArray objectAtIndex:6]integerValue] == 0)
+            if(estimate.dataOptions.duroLast == 0)
             {
                 cell.hidden =YES;
             }
             break;
         case SECTION_threePly:
-            if([[optionsArray objectAtIndex:7]integerValue] == 0)
+            if(estimate.dataOptions.threePly == 0)
             {
                 cell.hidden =YES;
             }
             break;
         case SECTION_foam:
-            if([[optionsArray objectAtIndex:8]integerValue] == 0)
+            if(estimate.dataOptions.foam == 0)
             {
                 cell.hidden =YES;
             }
             break;
         case SECTION_singlePVC:
-            if([[optionsArray objectAtIndex:9]integerValue] == 0)
+            if(estimate.dataOptions.singlePVC == 0)
             {
                 cell.hidden =YES;
             }
             break;
         case SECTION_singleTPO:
-            if([[optionsArray objectAtIndex:10]integerValue] == 0)
+            if(estimate.dataOptions.singleTPO == 0)
             {
                 cell.hidden =YES;
             }
             break;
         case SECTION_torch:
-            if([[optionsArray objectAtIndex:11]integerValue] == 0)
+            if(estimate.dataOptions.torch == 0)
             {
                 cell.hidden =YES;
             }
