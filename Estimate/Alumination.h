@@ -7,6 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#define ktearOff @ "Tear Off Includes"
+#define kroofComplexity @ "Roof Complexity"
+#define ksafetyReqs @ "Safety Requirements"
+#define kseamsFeet @ "Linear Feet Seems"
+#define ksideLapsRepair @ "Side Laps Needing Repair"
+#define kmanualFastners @ "Manual Fastners"
+
 
 @interface Alumination : NSObject
 

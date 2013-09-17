@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+#define ktearOff @ "Tear Off Includes"
+#define kroofComplexity @ "Roof Complexity"
+#define ksafetyReqs @ "Safety Requirements"
+#define kroofTypeRec @ "Type of Roof Recommended"
+#define kplysheet @ "Ply Sheet"
+#define kmanWarranty @ "Manufacturer's Warranty Offered"
+#define kgalCoatingSQStot @ "Gallons of Coating per SQS(Total)"
+#define kcoatingManu @ "Coating Manufacturer"
+#define ksmallChemCurb @ "Small Chemical Curbs"
+#define klargeChemCurb @ "Large Chemical Curbs"
+
 @interface BuiltUpFileGNC : NSObject
 
 @property (strong) NSString *tearOff;

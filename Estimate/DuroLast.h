@@ -8,6 +8,26 @@
 
 #import <Foundation/Foundation.h>
 
+#define kwallHeight @ "Wall Height"
+#define kcurbFlashings @ "Number of Curb Flashings"
+#define kacUnits @ "Number of A/C Units"
+#define kpipeBoots @ "Number of Pipe Boots"
+#define kinsuSQS @ "Insulation SQS"
+#define kslipSheet @ "Slip Sheet"
+#define kwalkPads @ "Walk Pads"
+#define krollsSixMembrane @ "Number of rolls 6in. Membrane"
+#define kgalBondingAdhesive @ "Number of Gallons of Bonding Adhesive"
+#define kscrews @ "Number of Screws"
+#define kpolyPlates @ "Poly Plates"
+#define ktubesCaulk @ "Number of Caulking Tubes"
+#define kpailsStripMastic @ "Number of Pails of Strip Mastic"
+#define kpitchPanFiller @ "Number of Pitch Pan Filler(s)"
+#define kcleaner @ "Cleaner"
+#define kbagBands @ "Number of Bag Bands"
+#define kwoodBlocking @ "Number of Wood Blockings"
+#define kdrainRings @ "Number of Drain Rings"
+#define ksheetsCoverBoard @ "Number of Sheets Cover Board"
+
 @interface DuroLast : NSObject
 
 @property (assign) float wallHeight;

@@ -8,6 +8,24 @@
 //
 
 #import <Foundation/Foundation.h>
+#define ktearOff @ "Tear Off Includes"
+#define kroofComplexity @ "Roof Complexity"
+#define ksafetyReqs @ "Safety Requirements"
+#define kroofTypeRec @ "Type of Roof Recommended"
+#define kplysheet @ "Ply Sheet"
+#define kmanWarranty @ "Manufacturer's Warranty Offered"
+#define kprimeDeck @ "Prime Deck?"
+#define kgalAsphEmulsionSQS @ "Gallons of Asphalt Emulsion per SQS"
+#define kgalCoatingSQSbase @ "Gallons of Coating per SQS(Base)"
+#define kgalCoatingSQSinter @ "Gallons of Coating per SQS(Intermediate)"
+#define kgalCoatingSQStop @ "Gallons of Coating per SQS(Top)"
+#define kcoatingManu @ "Coating Manufacturer"
+#define kreplaceEdge @ "Replace Metal Edge?"
+#define kcounterFlashingNew @ "New Counter Flashing?"
+#define kscupperNew @ "New Scuppers?"
+#define ksmallChemCurb @ "Small Chemical Curbs"
+#define klargeChemCurb @ "Large Chemical Curbs"
+#define kpenetrationsSeal @ "Penetrations to Seal"
 
 @interface Coatings : NSObject
 

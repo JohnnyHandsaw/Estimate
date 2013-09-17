@@ -7,6 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#define kalumination @ "Alumination" 
+#define kbuiltUpGIC @ "Built Up GIC"
+#define kbuiltUpGIS @ "Built Up GIS"
+#define kbuiltUpGNC @ "Built Up GNC"
+#define KbuiltUpGNS @ "Built Up GNS"
+#define kcoatings @ "Coatings"
+#define kdurolast @ "Duro-Last"
+#define kthreePly @ "3 Ply cold"
+#define kfoam @ "Foam"
+#define ksinglePVC @ "Single-Ply PVC"
+#define ksingleTPO @"Single-Ply TPO"
+#define ktorch @ "Torch"
 
 @interface Options : NSObject
 

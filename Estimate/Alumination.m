@@ -17,4 +17,27 @@
 @synthesize sideLapsRepair = sideLapsRepair;
 @synthesize manualFasteners = manualFasteners;
 
+-(void) encodeWithCoder:(NSCoder *)encoder
+{
+    [encoder encodeObject:tearOff forKey: ktearOff];
+    [encoder encodeObject:roofComplexity forKey:kroofComplexity];
+    [encoder encodeObject:safetyReqs forKey:ksafetyReqs];
+    [encoder encodeFloat:seamsFeet forKey:kseamsFeet];
+    [encoder encodeInt:sideLapsRepair forKey:ksideLapsRepair];
+    [encoder encodeInt:manualFasteners forKey:kmanualFastners];
+}
+-(id)initWithCoder:(NSCoder *)decoder
+{
+    if (self = [super init])
+    {
+        
+        self.tearOff = [decoder decodeObjectForKey:ktearOff];
+        self.roofComplexity = [decoder decodeObjectForKey:kroofComplexity];
+        self.safetyReqs = [decoder decodeObjectForKey:ksafetyReqs];
+        self.seamsFeet = [decoder decodeFloatForKey:kseamsFeet];
+        self.sideLapsRepair = [decoder decodeIntForKey:ksideLapsRepair];
+        self.manualFasteners = [decoder decodeIntForKey:kmanualFastners];
+    }
+return self;
+}
 @end

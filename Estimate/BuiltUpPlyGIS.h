@@ -8,6 +8,25 @@
 
 #import <Foundation/Foundation.h>
 
+#define ktearOff @ "Tear Off Includes"
+#define kroofComplexity @ "Roof Complexity"
+#define ksafetyReqs @ "Safety Requirements"
+#define kroofTypeRec @ "Type of Roof Recommended"
+#define kplysheet @ "Ply Sheet"
+#define kmanWarranty @ "Manufacturer's Warranty Offered"
+#define kbaseInsApply @ "How Will Base Insulation Be Applied?"
+#define kbaseThickness @ "Thickness of Base Layer Insulation(inches)"
+#define ksecondInsApply @ "How Will 2nd Insulation be Applied?"
+#define ksecondThick @ "Thickness of 2nd Layer Insulation(inches)"
+#define krecoverApply @ "How Will Recover Board Be Applied?"
+#define krecoverThickness @ "Thickness of Recover Board(inches)"
+#define kgalAsphEmulsionSQS @ "Gallons of Asphalt Emulsion per SQS"
+#define kgalCoatingSQStot @ "Gallons of Coating per SQS(Total)"
+#define kcoatingManu @ "Coating Manufacturer"
+#define ksmallChemCurb @ "Small Chemical Curbs"
+#define klargeChemCurb @ "Large Chemical Curbs"
+#define kfastnersSQS @ "Fastners per SQS" 
+
 @interface BuiltUpPlyGIS : NSObject
 
 @property (strong) NSString *tearOff;
