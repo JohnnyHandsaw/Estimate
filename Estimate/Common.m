@@ -6,27 +6,6 @@
 //  Copyright (c) 2013 StarkWeather. All rights reserved.
 //
 
-#import "Common.h"
-#define kjobName @"Project Name"
-#define kcity @"Project City"
-#define kroofSQS @"Roof SQS"
-#define kbaseFlash @"Base Flashing Height"
-#define kwallsFeet @"Linear ft. Walls"
-#define kcurbFeet @"Linear ft. Curbs "
-#define kedgeFeet @"Linear ft. Edge"
-#define kcopingFeet @"Linear ft. Coping"
-#define kcurbUnit @"A/C Units on Curbs"
-#define kslopeUnit @"A/C Units on Sleepers"
-#define kleadJacks @"Lead Jacks"
-#define ksealantPans @"Sealant Pans"
-#define kdrains @"Drains"
-#define kpipes @"Pipes"
-#define kcladScuppers @"Cladded Scuppers"
-#define kscuppers @"Scuppers"
-#define ktTopVents @"T- Tops / Vents"
-#define kcorners @"Corners"
-#define kskylights @"Skylights"
-#define kskylightsReplace @"Skylights Needing Replacement"
 @implementation Common
 
 @synthesize jobName = jobName;
