@@ -74,7 +74,7 @@
         self.bagBands = [ decoder decodeFloatForKey:kbagBands];
         self.woodBlocking = [decoder decodeIntForKey:kwoodBlocking];
         self.drainRings = [ decoder decodeIntForKey:kdrainRings];
-        self.sheetsCoverBoard = [ decoder decodeIntForKey:ksheets];
+        self.sheetsCoverBoard = [ decoder decodeIntForKey: ksheetsCoverBoard];
     }
     return self;
     
