@@ -14,7 +14,7 @@
 #define kpipeBoots @ "Number of Pipe Boots"
 #define kinsuSQS @ "Insulation SQS"
 #define kslipSheet @ "Slip Sheet"
-#define kwalkPads @ "Walk Pads"
+#define kwalkPads @ "Number Feet of Walk Pads"
 #define krollsSixMembrane @ "Number of rolls 6in. Membrane"
 #define kgalBondingAdhesive @ "Number of Gallons of Bonding Adhesive"
 #define kscrews @ "Number of Screws"

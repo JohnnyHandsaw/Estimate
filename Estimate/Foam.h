@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+#define kbaseFlashSQS @ "Number of Base Flash SQS"
+#define kwallHeight @ "Wall Height"
+#define kpipes @ "Number of Pipes"
+#define kacUnits @ "Number of A/C Units"
+#define kfoamDepth @ "Foam Depth"
+
 @interface Foam : NSObject
 
 @property (assign) float baseFlashSQS;

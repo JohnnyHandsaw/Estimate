@@ -9,6 +9,27 @@
 
 #import <Foundation/Foundation.h>
 
+#define kjobname @ "Job Name"
+#define kcity @ "Job City"
+#define kdeckType @ "Deck Type"
+#define kroofSQS @ "Roof SQS"
+#define kbaseFlash @ "Base Flashing Height"
+#define kwallsFeet @ "Linear ft. Walls"
+#define kcurbFeet @ "Linear ft. Curbs "
+#define kedgeFeet @ "Linear ft. Edge"
+#define kcopingFeet @ "Linear ft. Coping"
+#define kcurbUnit @ "A/C Units on Curbs"
+#define kslopeUnit @ "A/C Units on Sleepers"
+#define kleadJacks @ "Lead Jacks"
+#define ksealantPans @ "Sealant Pans"
+#define kdrains @ "Drains"
+#define kpipes @ "Number of Pipes"
+#define kcladScuppers @ "Cladded Scuppers"
+#define kscuppers @ "Scuppers"
+#define ktTopVents @ "T- Tops / Vents"
+#define kcorners @ "Corners"
+#define kskylights @ "Skylights"
+#define kskylightsReplace @ "Skylights Needing Replacement"
 
 @interface Common : NSObject<NSCoding>
 

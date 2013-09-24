@@ -10,7 +10,8 @@
 @class Estimate;
 
 @interface StaticTableViewController : UITableViewController<UITextFieldDelegate, UIPickerViewDelegate,UIPickerViewDataSource> {
-    
+    UIView *release;
+    UIButton *done;
     UIPickerView *pickerView;
     //UITextView *standardKeyBoard;
     NSMutableArray *cityOptions;
@@ -20,6 +21,9 @@
 @property (strong, nonatomic) NSArray *optionsArray;
 @property (strong, nonatomic) NSArray *deckTypeArray;
 @property (nonatomic) UIPickerView *pickerView;
+@property (nonatomic, retain) UIView *inputView;
+@property (nonatomic, retain) UIView *release;
+@property (nonatomic, retain) UIView *done;
 //@property  (nonatomic) UITextView *standardKeyBoard;
 @property (nonatomic) NSMutableArray *cityOptions;
 
@@ -45,10 +49,24 @@
 @property (weak, nonatomic) IBOutlet UITextField *skylights;
 @property (weak, nonatomic) IBOutlet UITextField *skylightsReplace;
 
+@property (weak, nonatomic) IBOutlet UITextField *tearOff;
+@property (weak, nonatomic) IBOutlet UITextField *roofComplex;
+@property (weak, nonatomic) IBOutlet UITextField *safetyReqs;
+@property (weak, nonatomic) IBOutlet UITextField *alum_seemsFeet;
+@property (weak, nonatomic) IBOutlet UITextField *alum_sideLaps;
+@property (weak, nonatomic) IBOutlet UITextField *alum_manualFasteners;
 
 - (IBAction)city:(id)sender;
 - (IBAction)deckTypeEdit:(id)sender;
 -(IBAction)pickerDoneClicked:(id)sender;
 -(IBAction)standardKeyBoardDone:(id)sender;
 -(IBAction)decimalKeyBoard:(id)sender;
+-(void)createAccessory;
+- (IBAction)textChange:(id)sender;
+- (IBAction)fieldChange:(id)sender;
+- (IBAction)tearOffEdit:(id)sender;
+- (IBAction)roofComplexEdit:(id)sender;
+- (IBAction)safetyReqsEdit:(id)sender;
+
+
 @end

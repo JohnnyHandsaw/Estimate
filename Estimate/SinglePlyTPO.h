@@ -8,6 +8,26 @@
 
 #import <Foundation/Foundation.h>
 
+#define ktearOff @ "Tear Off Includes"
+#define kroofComplexity @ "Roof Complexity"
+#define ksafetyReqs @ "Safety Requirements"
+#define kroofTypeRec @ "Type of Roof Recommended"
+#define kmanWarranty @ "Manufacturer's Warranty Offered"
+#define kmillSheets @ "Mill of Sheet"
+#define ksheetManu @ "Sheet Manufacturer"
+#define kslipSheetType @ "Slip Sheet Type"
+#define kbaseInsApply @ "How Will Base Insulation Be Applied?"
+#define kbaseThickness @ "Thickness of Base Layer Insulation(inches)"
+#define ksecondInsApply @ "How Will 2nd Insulation be Applied?"
+#define ksecondThick @ "Thickness of 2nd Layer Insulation(inches)"
+#define krecoverApply @ "How Will Recover Board Be Applied?"
+#define krecoverThickness @ "Thickness of Recover Board(inches)"
+#define kseamfastnerInchCenter @ "Seam Fastner Inches on Center"
+#define kcrickets @ "Crickets?"
+#define kperimeterSheets @ "Number of Parimeter Sheets"
+#define kpipeBoots @ "Number of Pipe Boots"
+#define kwalkPads @ "Number Feet of Walk Pads"
+
 @interface SinglePlyTPO : NSObject
 
 @property (strong) NSString *tearOff;
