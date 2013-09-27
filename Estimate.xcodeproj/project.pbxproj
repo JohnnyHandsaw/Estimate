@@ -22,6 +22,7 @@
 		1687CABC17E19A8300393F70 /* SinglePlyPVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1687CABB17E19A8100393F70 /* SinglePlyPVC.m */; };
 		1687CABF17E19BEB00393F70 /* SinglePlyTPO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1687CABE17E19BEA00393F70 /* SinglePlyTPO.m */; };
 		1687CAC217E19C3900393F70 /* Torch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1687CAC117E19C3700393F70 /* Torch.m */; };
+		168BA1F917F53BD0008D99FC /* Proposal.m in Sources */ = {isa = PBXBuildFile; fileRef = 168BA1F817F53BD0008D99FC /* Proposal.m */; };
 		168E7B3617D5D36600D7BD16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 168E7B3517D5D36600D7BD16 /* UIKit.framework */; };
 		168E7B3817D5D36600D7BD16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 168E7B3717D5D36600D7BD16 /* Foundation.framework */; };
 		168E7B3A17D5D36600D7BD16 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 168E7B3917D5D36600D7BD16 /* CoreGraphics.framework */; };
@@ -69,6 +70,8 @@
 		1687CABE17E19BEA00393F70 /* SinglePlyTPO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinglePlyTPO.m; sourceTree = "<group>"; };
 		1687CAC017E19C3500393F70 /* Torch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Torch.h; sourceTree = "<group>"; };
 		1687CAC117E19C3700393F70 /* Torch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Torch.m; sourceTree = "<group>"; };
+		168BA1F717F53BD0008D99FC /* Proposal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Proposal.h; sourceTree = "<group>"; };
+		168BA1F817F53BD0008D99FC /* Proposal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Proposal.m; sourceTree = "<group>"; };
 		168E7B3217D5D36600D7BD16 /* Estimate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Estimate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		168E7B3517D5D36600D7BD16 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		168E7B3717D5D36600D7BD16 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -209,6 +212,8 @@
 				1687CABE17E19BEA00393F70 /* SinglePlyTPO.m */,
 				1687CAC017E19C3500393F70 /* Torch.h */,
 				1687CAC117E19C3700393F70 /* Torch.m */,
+				168BA1F717F53BD0008D99FC /* Proposal.h */,
+				168BA1F817F53BD0008D99FC /* Proposal.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 				1687CABC17E19A8300393F70 /* SinglePlyPVC.m in Sources */,
 				1687CABF17E19BEB00393F70 /* SinglePlyTPO.m in Sources */,
 				1687CAC217E19C3900393F70 /* Torch.m in Sources */,
+				168BA1F917F53BD0008D99FC /* Proposal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

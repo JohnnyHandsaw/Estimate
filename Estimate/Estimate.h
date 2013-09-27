@@ -11,7 +11,7 @@
 @class Options;
 @class Common;
 @class BuiltUpPlyGIC;
-@class BuiltUpFileGNC;
+@class BuiltUpPlyGNC;
 @class BuiltUpPlyGIS;
 @class BuiltUpPlyGNS;
 @class Alumination;
@@ -23,7 +23,7 @@
 @class SinglePlyTPO;
 @class Torch;
 
-@interface Estimate : NSObject
+@interface Estimate : NSObject <NSCoding>
 
 @property (strong) NSString *title;
 @property (strong) Options *dataOptions;
@@ -32,7 +32,7 @@
 @property (strong) BuiltUpPlyGNS *dataBuiltUpPlyGNS;
 @property (strong) BuiltUpPlyGIS *dataBuiltUpPlyGIS;
 @property (strong) BuiltUpPlyGIC *dataBuiltUpPlyGIC;
-@property (strong) BuiltUpFileGNC *dataBuiltUpPlyGNC;
+@property (strong) BuiltUpPlyGNC *dataBuiltUpPlyGNC;
 @property (strong) Coatings  *dataCoatings;
 @property (strong) DuroLast  *dataDuroLast;
 @property (strong) ThreePlyCold  *dataThreePlyCold;
@@ -41,6 +41,9 @@
 @property (strong) SinglePlyTPO  *dataSinglePlyTPO;
 @property (strong) Torch  *dataTorch;
 
+-(void) encodeWithCoder:(NSCoder* )encoder;
+-(id)initWithCoder:(NSCoder*)decoder;
+-(id)initWithTitle:(NSString*)title dataOptions:(Options*)dataOptions dataCommon:(Common*)dataCommon dataAlumination:(Alumination*)dataAlumination dataBuiltUpPlyGNS:(BuiltUpPlyGNS*)dataBuiltUpPlyGNS dataBuiltUpPlyGIS:(BuiltUpPlyGIS*)dataBuiltUpPlyGIS dataBuiltUpPlyGIC:(BuiltUpPlyGIC*)dataBuiltUpPlyGIC dataBuiltUpPlyGNC:(BuiltUpPlyGNC*)dataBuiltUpPlyGNC dataCoatings:(Coatings*)dataCoatings dataDuroLast:(DuroLast*)dataDuroLast dataThreePlyCold:(ThreePlyCold *)dataThreePlyCold dataFoam:(Foam*)dataFoam dataSinglePlyPVC:(SinglePlyPVC*)dataSinglePlyPVC dataSinglePlyTPO:(SinglePlyTPO*)dataSinglePlyTPO dataTorch:(Torch*)dataTorch;
 
 //- (id)initWithObjects:(NSObject*)estimate options:(Options*)options common:(Common*)common
 //    alumination:(Alumination*)alumination builtUpPlyGNS:(BuiltUpPlyGNS*)builtUpPlyGNS
