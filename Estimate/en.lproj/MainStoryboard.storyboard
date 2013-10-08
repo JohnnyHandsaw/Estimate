@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" initialViewController="3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <development version="4600" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -22,7 +24,7 @@
         <!--Master View Controller - Master-->
         <scene sceneID="18">
             <objects>
-                <tableViewController storyboardIdentifier="" title="Master" id="12" customClass="MasterViewController" sceneMemberID="viewController">
+                <tableViewController title="Master" id="12" customClass="MasterViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="13">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,6 +84,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Alumination 301" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTM-qe-NkW">
+                                                    <rect key="frame" x="27" y="11" width="156" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="156" id="7Yd-JN-HdN"/>
                                                     </constraints>
@@ -105,6 +108,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Built-Up xPLYxGIC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVa-xL-BgY">
+                                                    <rect key="frame" x="27" y="11" width="232" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="232" id="YC6-hp-ufC"/>
                                                     </constraints>
@@ -128,6 +132,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Built-Up xPLYxGIS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEr-WJ-zqh">
+                                                    <rect key="frame" x="27" y="11" width="232" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="232" id="fJ4-ZX-vGo"/>
                                                     </constraints>
@@ -151,6 +156,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Built-Up xPLYxGNC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40c-hA-fVE">
+                                                    <rect key="frame" x="27" y="11" width="232" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="232" id="yG9-Me-Sn4"/>
                                                     </constraints>
@@ -174,6 +180,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Built-Up xPLYxGNS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3H-Rm-455">
+                                                    <rect key="frame" x="27" y="11" width="232" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="232" id="9JQ-GM-WHT"/>
                                                     </constraints>
@@ -197,6 +204,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Coatings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kew-n0-g5e">
+                                                    <rect key="frame" x="27" y="12" width="232" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="232" id="Iog-VK-wif"/>
                                                     </constraints>
@@ -220,6 +228,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Duro-Last" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-f0-eap">
+                                                    <rect key="frame" x="27" y="11" width="232" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="232" id="B2e-gT-rKn"/>
                                                     </constraints>
@@ -243,6 +252,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3 Ply Cold" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJt-L6-tQU">
+                                                    <rect key="frame" x="27" y="11" width="232" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="232" id="jfw-Mx-vdb"/>
                                                     </constraints>
@@ -266,6 +276,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Foam" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFG-2b-AID">
+                                                    <rect key="frame" x="27" y="11" width="232" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="232" id="GTf-8r-V4u"/>
                                                     </constraints>
@@ -289,6 +300,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Single-Ply PVC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDs-Xs-kdG">
+                                                    <rect key="frame" x="27" y="11" width="232" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="232" id="Pch-3b-qAI"/>
                                                     </constraints>
@@ -312,6 +324,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Single-Ply TPO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gc9-EC-vH1">
+                                                    <rect key="frame" x="27" y="11" width="232" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="232" id="U4o-4m-zOS"/>
                                                     </constraints>
@@ -335,6 +348,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Torch" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aea-fF-6h7">
+                                                    <rect key="frame" x="27" y="11" width="232" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="232" id="Ks4-ie-Vx3"/>
                                                     </constraints>
@@ -362,6 +376,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Create New Project" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqU-Nv-m1a">
+                                                    <rect key="frame" x="93" y="12" width="156" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="156" id="YkX-Ns-enz"/>
                                                     </constraints>
@@ -413,6 +428,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Project" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Umy-dP-jqf">
+                                                    <rect key="frame" x="7" y="13" width="62" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="62" id="4yj-D0-06k"/>
                                                     </constraints>
@@ -421,6 +437,7 @@
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Project Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xt8-a7-8Jd">
+                                                    <rect key="frame" x="68" y="7" width="226" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="226" id="9by-7S-Qrg"/>
                                                         <constraint firstAttribute="height" constant="30" id="Mzj-Mk-BAF"/>
@@ -450,6 +467,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="City" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7A-Df-8so">
+                                                    <rect key="frame" x="28" y="11" width="42" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="42" id="dqV-xj-uWf"/>
                                                     </constraints>
@@ -458,6 +476,7 @@
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yrJ-JM-XDB">
+                                                    <rect key="frame" x="68" y="8" width="225" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="225" id="ZCJ-mi-CmQ"/>
                                                     </constraints>
@@ -485,6 +504,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Deck" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nko-mZ-Zua">
+                                                    <rect key="frame" x="20" y="11" width="42" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="42" id="Jeu-ub-X36"/>
                                                     </constraints>
@@ -493,6 +513,7 @@
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Deck Type" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a3c-QN-3uv">
+                                                    <rect key="frame" x="70" y="7" width="220" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="220" id="XOH-Qp-hKV"/>
                                                     </constraints>
@@ -520,6 +541,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Roof SQS" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ypY-dv-GGz">
+                                                    <rect key="frame" x="9" y="7" width="128" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="128" id="qYq-AX-fMM"/>
                                                     </constraints>
@@ -531,6 +553,7 @@
                                                     </connections>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Base Flash Height" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cej-0F-F1Z">
+                                                    <rect key="frame" x="156" y="7" width="135" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="135" id="K0d-bM-IV4"/>
                                                     </constraints>
@@ -558,6 +581,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Linear Feet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pO-lI-1Qv">
+                                                    <rect key="frame" x="6" y="36" width="96" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="96" id="aIX-AH-P2I"/>
                                                     </constraints>
@@ -566,6 +590,7 @@
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Walls" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZlD-tc-zfK">
+                                                    <rect key="frame" x="93" y="9" width="97" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="Mvw-2B-qP9"/>
                                                     </constraints>
@@ -576,6 +601,7 @@
                                                     </connections>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Curbs" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RCm-dV-rT8">
+                                                    <rect key="frame" x="198" y="9" width="97" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="cSz-an-xz5"/>
                                                     </constraints>
@@ -586,6 +612,7 @@
                                                     </connections>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Edge" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ocj-aN-aiq">
+                                                    <rect key="frame" x="93" y="45" width="97" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                                     <connections>
@@ -593,6 +620,7 @@
                                                     </connections>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Coping" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rEM-4p-4V9">
+                                                    <rect key="frame" x="198" y="45" width="97" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                                     <connections>
@@ -625,6 +653,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="# AC Units" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hq4-7M-aXw">
+                                                    <rect key="frame" x="8" y="11" width="88" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="88" id="ypp-SF-QNU"/>
                                                     </constraints>
@@ -633,6 +662,7 @@
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Curbs" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jy9-8G-xdG">
+                                                    <rect key="frame" x="94" y="7" width="97" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="eXl-Ws-7Pd"/>
                                                     </constraints>
@@ -643,6 +673,7 @@
                                                     </connections>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sleepers" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1LB-fM-5tw">
+                                                    <rect key="frame" x="199" y="7" width="97" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="97" id="CTZ-vu-8JY"/>
                                                     </constraints>
@@ -672,6 +703,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Lead Jacks" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rHl-xb-iLm">
+                                                    <rect key="frame" x="8" y="7" width="128" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="128" id="rd1-IF-NDe"/>
                                                     </constraints>
@@ -682,6 +714,7 @@
                                                     </connections>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Sealant Pans" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KFV-nv-6N3">
+                                                    <rect key="frame" x="160" y="7" width="135" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="135" id="8Ws-rT-INV"/>
                                                     </constraints>
@@ -709,6 +742,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Drains" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EZi-8R-Mhq">
+                                                    <rect key="frame" x="8" y="7" width="128" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="128" id="s2u-vO-DNO"/>
                                                     </constraints>
@@ -719,6 +753,7 @@
                                                     </connections>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Pipes" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Bx-7k-wUg">
+                                                    <rect key="frame" x="160" y="7" width="135" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="135" id="sgI-cg-c8o"/>
                                                     </constraints>
@@ -746,6 +781,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Clad Scuppers" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vlN-wt-L8L">
+                                                    <rect key="frame" x="8" y="7" width="128" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="128" id="w5P-u3-nIi"/>
                                                     </constraints>
@@ -756,6 +792,7 @@
                                                     </connections>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Scuppers" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eEj-5H-Znv">
+                                                    <rect key="frame" x="160" y="7" width="135" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="135" id="rlB-Ug-NaM"/>
                                                     </constraints>
@@ -783,6 +820,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# T-Top Vents" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dNy-2H-80J">
+                                                    <rect key="frame" x="8" y="7" width="128" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="128" id="enT-1x-Mdu"/>
                                                     </constraints>
@@ -793,6 +831,7 @@
                                                     </connections>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Corners" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zg9-8f-Hgk">
+                                                    <rect key="frame" x="160" y="7" width="135" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="135" id="2ne-BO-Gvn"/>
                                                     </constraints>
@@ -820,6 +859,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Skylights" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rY4-Yp-cB8">
+                                                    <rect key="frame" x="8" y="8" width="128" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="128" id="0hz-T7-63P"/>
                                                     </constraints>
@@ -830,6 +870,7 @@
                                                     </connections>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skylights Replace" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Plj-9K-hEe">
+                                                    <rect key="frame" x="160" y="8" width="135" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="135" id="iSt-e4-ADw"/>
                                                     </constraints>
@@ -861,6 +902,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tear-Off Includes" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eF7-le-FCJ">
+                                                    <rect key="frame" x="14" y="7" width="278" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="278" id="njC-Nl-aLA"/>
                                                     </constraints>
@@ -883,6 +925,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Roof Complexity" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UhL-41-JBy">
+                                                    <rect key="frame" x="12" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="YsS-FR-xjG"/>
                                                     </constraints>
@@ -890,6 +933,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Safety Reqs" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G65-eh-Cml">
+                                                    <rect key="frame" x="163" y="7" width="130" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="130" id="EOm-nQ-PO2"/>
                                                     </constraints>
@@ -914,6 +958,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Linear Feet-Seams" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CsB-DZ-z6K">
+                                                    <rect key="frame" x="12" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="qfl-i2-R8A"/>
                                                     </constraints>
@@ -921,6 +966,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Side Laps" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z81-lW-rXz">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="8yf-ac-56o"/>
                                                     </constraints>
@@ -945,6 +991,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Manual Fasteners" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1iN-P6-r3b">
+                                                    <rect key="frame" x="59" y="8" width="182" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="182" id="9dr-XH-Vh4"/>
                                                     </constraints>
@@ -971,6 +1018,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tear-Off Includes" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qh8-aq-jPg">
+                                                    <rect key="frame" x="14" y="7" width="278" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="278" id="Mr4-LV-6iK"/>
                                                     </constraints>
@@ -993,6 +1041,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Roof Complexity" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t6p-P8-6wd">
+                                                    <rect key="frame" x="12" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="ExH-Qf-xQu"/>
                                                     </constraints>
@@ -1000,6 +1049,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Safety Reqs" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="64X-aE-RHa">
+                                                    <rect key="frame" x="163" y="7" width="130" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="130" id="qnp-6K-Mm0"/>
                                                     </constraints>
@@ -1024,6 +1074,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type of Roof Rec" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Pn-mu-G6G">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="wbi-AY-w9R"/>
                                                     </constraints>
@@ -1031,6 +1082,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Manu Warranty" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lz7-FQ-Njf">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="7tb-ul-CAL"/>
                                                     </constraints>
@@ -1055,6 +1107,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ply Sheet" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bHV-zw-qTy">
+                                                    <rect key="frame" x="11" y="7" width="280" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="280" id="eyn-uQ-Wbu"/>
                                                     </constraints>
@@ -1077,6 +1130,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Thick Base Insu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="weQ-Gt-6bL">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="LY4-Sy-5WD"/>
                                                     </constraints>
@@ -1084,6 +1138,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Base Insu Apply" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JrF-AC-xML">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="puq-8b-SD0"/>
                                                     </constraints>
@@ -1108,6 +1163,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Thick 2nd Insu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EJF-vh-xDY">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="1h1-ZN-qfE"/>
                                                     </constraints>
@@ -1115,6 +1171,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="2nd Insu Apply" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GjS-bB-Bdo">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="eRa-KY-Lnm"/>
                                                     </constraints>
@@ -1139,6 +1196,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Thick Rec Board" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bvI-5G-CZ0">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="BgT-bH-TUW"/>
                                                     </constraints>
@@ -1146,6 +1204,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rec Board Apply" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8AV-eu-ccr">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="Oxq-dU-pDt"/>
                                                     </constraints>
@@ -1170,6 +1229,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="GAL Coating SQS" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vnc-ZR-FAD">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="v21-s2-vjd"/>
                                                     </constraints>
@@ -1177,6 +1237,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Coating Manu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="goO-1w-5Di">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="fou-bg-yba"/>
                                                     </constraints>
@@ -1201,6 +1262,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# SM Chem Curb" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qGT-rj-ra0">
+                                                    <rect key="frame" x="11" y="8" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="fMb-M4-N3O"/>
                                                     </constraints>
@@ -1208,6 +1270,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# LG Chem Curb" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FMa-Um-Oj0">
+                                                    <rect key="frame" x="166" y="8" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="RAO-Wa-2mm"/>
                                                     </constraints>
@@ -1236,6 +1299,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tear-Off Includes" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xLC-jV-3Gc">
+                                                    <rect key="frame" x="14" y="7" width="278" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="278" id="mnA-i8-ROt"/>
                                                     </constraints>
@@ -1258,6 +1322,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Roof Complexity" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TvX-Dl-40J">
+                                                    <rect key="frame" x="12" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="77O-s0-KYc"/>
                                                     </constraints>
@@ -1265,6 +1330,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Safety Reqs" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7fY-dP-k59">
+                                                    <rect key="frame" x="163" y="7" width="130" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="130" id="Mac-m1-C1E"/>
                                                     </constraints>
@@ -1289,6 +1355,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type of Roof Rec" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gI7-ok-j6R">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="YnO-wM-gSB"/>
                                                     </constraints>
@@ -1296,6 +1363,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Manu Warranty" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PK7-kz-SKO">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="0d8-Vj-Qnf"/>
                                                     </constraints>
@@ -1320,6 +1388,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ply Sheet" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zQQ-1K-KMO">
+                                                    <rect key="frame" x="11" y="7" width="280" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="280" id="MX2-EA-EFf"/>
                                                     </constraints>
@@ -1342,6 +1411,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Thick Base Insu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VuB-3d-Zy8">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="PWs-aF-idh"/>
                                                     </constraints>
@@ -1349,6 +1419,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Base Insu Apply" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IwU-7d-g5S">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="dE1-CJ-p9G"/>
                                                     </constraints>
@@ -1373,6 +1444,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Thick 2nd Insu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KRa-HQ-atk">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="9Yt-Gr-wth"/>
                                                     </constraints>
@@ -1380,6 +1452,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="2nd Insu Apply" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1cM-xj-wjh">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="xfU-Vi-k72"/>
                                                     </constraints>
@@ -1404,6 +1477,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Thick Rec Board" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CNw-T3-RdZ">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="epU-A1-cdC"/>
                                                     </constraints>
@@ -1411,6 +1485,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rec Board Apply" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wvw-lY-7XC">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="RQa-NT-H3R"/>
                                                     </constraints>
@@ -1435,6 +1510,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="GAL Coating SQS" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N88-k2-mN4">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="S6x-Wm-Sbe"/>
                                                     </constraints>
@@ -1442,6 +1518,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="GAL Asph SQS" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gQ6-cB-Nya">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="fy9-Rj-PMW"/>
                                                     </constraints>
@@ -1466,6 +1543,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Coating Manu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yDV-7z-Js1">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="Ap2-gZ-zQ5"/>
                                                     </constraints>
@@ -1473,6 +1551,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Fasteners SQS" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rLP-wi-Qec">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="5nx-ug-zBN"/>
                                                     </constraints>
@@ -1497,6 +1576,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# SM Chem Curb" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O7i-zf-QDH">
+                                                    <rect key="frame" x="11" y="8" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="195-w6-9hG"/>
                                                     </constraints>
@@ -1504,6 +1584,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# LG Chem Curb" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bQm-Hk-qoc">
+                                                    <rect key="frame" x="166" y="8" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="SFm-Dv-liu"/>
                                                     </constraints>
@@ -1532,6 +1613,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tear-Off Includes" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qom-YR-AaT">
+                                                    <rect key="frame" x="14" y="7" width="278" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="278" id="cW0-0c-xKF"/>
                                                     </constraints>
@@ -1554,6 +1636,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Roof Complexity" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ho-fW-g3m">
+                                                    <rect key="frame" x="12" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="y1O-Bu-cDf"/>
                                                     </constraints>
@@ -1561,6 +1644,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Safety Reqs" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xhe-5k-Vvb">
+                                                    <rect key="frame" x="163" y="7" width="130" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="130" id="JVb-mD-PRt"/>
                                                     </constraints>
@@ -1585,6 +1669,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type of Roof Rec" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z0O-By-Yak">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="QG6-yE-hAL"/>
                                                     </constraints>
@@ -1592,6 +1677,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Manu Warranty" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Do6-cF-Bfb">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="Ged-yK-pOc"/>
                                                     </constraints>
@@ -1616,6 +1702,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ply Sheet" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zdO-D1-NmB">
+                                                    <rect key="frame" x="11" y="7" width="280" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="280" id="QTh-DE-FgT"/>
                                                     </constraints>
@@ -1638,6 +1725,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="GAL Coating SQS" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ByF-zk-i2r">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="JlQ-P6-UTb"/>
                                                     </constraints>
@@ -1645,6 +1733,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Coating Manu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H1w-rZ-BSU">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="ztN-h7-aI0"/>
                                                     </constraints>
@@ -1669,6 +1758,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# SM Chem Curb" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kpu-Si-pH1">
+                                                    <rect key="frame" x="11" y="8" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="a3t-yP-21Q"/>
                                                     </constraints>
@@ -1676,6 +1766,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# LG Chem Curb" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PIN-0V-9IO">
+                                                    <rect key="frame" x="166" y="8" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="0lr-0K-MaM"/>
                                                     </constraints>
@@ -1704,6 +1795,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tear-Off Includes" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Mb-VU-wFS">
+                                                    <rect key="frame" x="14" y="7" width="278" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="278" id="F9e-Uw-31W"/>
                                                     </constraints>
@@ -1726,6 +1818,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Roof Complexity" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TiV-26-3Ob">
+                                                    <rect key="frame" x="12" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="Esh-ZL-Aaa"/>
                                                     </constraints>
@@ -1733,6 +1826,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Safety Reqs" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e6b-52-vHJ">
+                                                    <rect key="frame" x="163" y="7" width="130" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="130" id="J0F-lP-SlF"/>
                                                     </constraints>
@@ -1757,6 +1851,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type of Roof Rec" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rEC-Yv-5Fc">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="iv5-h7-k0v"/>
                                                     </constraints>
@@ -1764,6 +1859,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Manu Warranty" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PPd-c2-d1k">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="x2n-lG-XJE"/>
                                                     </constraints>
@@ -1788,6 +1884,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ply Sheet" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iao-dQ-hGY">
+                                                    <rect key="frame" x="11" y="7" width="280" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="280" id="cNK-MY-dH9"/>
                                                     </constraints>
@@ -1810,6 +1907,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="GAL Coating SQS" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yIe-Nx-hgm">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="r30-1f-X0X"/>
                                                     </constraints>
@@ -1817,6 +1915,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="GAL Asph SQS" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xNd-tz-T7q">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="9Wq-a6-YfC"/>
                                                     </constraints>
@@ -1841,6 +1940,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Coating Manu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JJd-Z2-eef">
+                                                    <rect key="frame" x="39" y="7" width="223" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="223" id="EQS-sG-P88"/>
                                                     </constraints>
@@ -1863,6 +1963,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# SM Chem Curb" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LNq-20-47b">
+                                                    <rect key="frame" x="11" y="8" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="5RB-sm-AnS"/>
                                                     </constraints>
@@ -1870,6 +1971,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# LG Chem Curb" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ob-jq-iQa">
+                                                    <rect key="frame" x="166" y="8" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="GYP-Jv-Hha"/>
                                                     </constraints>
@@ -1898,6 +2000,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tear-Off Includes" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LND-Je-icc">
+                                                    <rect key="frame" x="14" y="7" width="278" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="278" id="p6w-BM-vBg"/>
                                                     </constraints>
@@ -1920,6 +2023,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Roof Complexity" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cRa-kP-tfJ">
+                                                    <rect key="frame" x="12" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="7lK-TH-GWy"/>
                                                     </constraints>
@@ -1927,6 +2031,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Safety Reqs" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ac3-hk-PWr">
+                                                    <rect key="frame" x="163" y="7" width="130" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="130" id="nRI-5X-7yy"/>
                                                     </constraints>
@@ -1951,6 +2056,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type of Roof Rec" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cms-NF-Kbw">
+                                                    <rect key="frame" x="14" y="7" width="278" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="278" id="7WC-X6-l0N"/>
                                                     </constraints>
@@ -1973,6 +2079,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Manu Warranty" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FZ3-fp-Lfc">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="8br-UA-3iN"/>
                                                     </constraints>
@@ -1980,6 +2087,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Prime Deck?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UZX-ic-fxh">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="E4B-DA-aGL"/>
                                                     </constraints>
@@ -2004,6 +2112,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Coating SQS Base" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ie-mS-UIG">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="6oC-Z4-vp5"/>
                                                     </constraints>
@@ -2011,6 +2120,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Coating SQS Int" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mhr-kT-HUg">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="Ca6-yV-N1P"/>
                                                     </constraints>
@@ -2035,6 +2145,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Coating SQS Top" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mjv-0p-NtH">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="U6q-8q-23P"/>
                                                     </constraints>
@@ -2042,6 +2153,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Coating Manu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aF6-vP-X8B">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="6d6-hA-f9p"/>
                                                     </constraints>
@@ -2066,6 +2178,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rep Metal Edge" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gFF-RU-Fwx">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="1md-89-sur"/>
                                                     </constraints>
@@ -2073,6 +2186,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Counter Flashing" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Re1-uL-qn6">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="nmu-TS-b3j"/>
                                                     </constraints>
@@ -2097,6 +2211,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Scuppers" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="etr-1k-Amt">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="f5z-g2-pGG"/>
                                                     </constraints>
@@ -2104,6 +2219,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Penetration " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sNZ-Hs-Kpi">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="rjs-AY-9di"/>
                                                     </constraints>
@@ -2128,6 +2244,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# SM Chem Curb" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="egI-FI-a60">
+                                                    <rect key="frame" x="11" y="8" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="nVA-Rm-gy3"/>
                                                     </constraints>
@@ -2135,6 +2252,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# LG Chem Curb" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XpK-1T-xFx">
+                                                    <rect key="frame" x="166" y="8" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="fX7-X8-c6p"/>
                                                     </constraints>
@@ -2163,6 +2281,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Wall SQS" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hmo-2o-8f3">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="BeW-Cg-HfM"/>
                                                     </constraints>
@@ -2170,6 +2289,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Wall Height" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MAD-p8-HfK">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="xcX-k5-Xfb"/>
                                                     </constraints>
@@ -2194,6 +2314,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Curb Flash" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hsj-kP-RAG">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="j84-PP-o8B"/>
                                                     </constraints>
@@ -2201,6 +2322,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# AC Units" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pjp-c5-VKu">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="tnX-Ex-May"/>
                                                     </constraints>
@@ -2225,6 +2347,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Pipe Boots" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kyw-zJ-BlN">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="zRj-c2-rYk"/>
                                                     </constraints>
@@ -2232,6 +2355,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insulation SQS" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xMq-cX-iS2">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="cSB-hA-kuo"/>
                                                     </constraints>
@@ -2256,6 +2380,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Slip Sheet" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w84-DV-ZfC">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="3m9-6r-CXh"/>
                                                     </constraints>
@@ -2263,6 +2388,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Walk Pads" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G8H-iC-tGZ">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="1LV-S7-q5y"/>
                                                     </constraints>
@@ -2287,6 +2413,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Rolls 6&quot; Mem" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l6P-Kp-Per">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="DF7-AH-RJY"/>
                                                     </constraints>
@@ -2294,6 +2421,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# GAL Bond Adh" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eij-zg-33n">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="vxy-DX-4Mh"/>
                                                     </constraints>
@@ -2318,6 +2446,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Screws" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gCG-jB-Vqh">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="Jy1-wD-jns"/>
                                                     </constraints>
@@ -2325,6 +2454,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Poly Plates" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XQe-Di-Wij">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="QqH-Nz-6ij"/>
                                                     </constraints>
@@ -2349,6 +2479,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Tube Caulk" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PwW-Hv-Li6">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="izA-2T-c54"/>
                                                     </constraints>
@@ -2356,6 +2487,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Pails Strip Mas" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xeu-PA-ahZ">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="s36-u9-wvL"/>
                                                     </constraints>
@@ -2380,6 +2512,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Pitch Pan Fill" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZjM-qX-DA7">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="igV-xU-UMh"/>
                                                     </constraints>
@@ -2387,6 +2520,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Cleaner" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="56Q-c7-6W1">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="0jf-EX-70d"/>
                                                     </constraints>
@@ -2411,6 +2545,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Bags Bands" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="adY-i2-k7L">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="cFC-zG-yab"/>
                                                     </constraints>
@@ -2418,6 +2553,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Wood Blocking" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y6r-YG-v5R">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="rz6-qb-jdE"/>
                                                     </constraints>
@@ -2442,6 +2578,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Drain Rings" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yw7-OE-O2c">
+                                                    <rect key="frame" x="11" y="8" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="52v-uC-1Uc"/>
                                                     </constraints>
@@ -2449,6 +2586,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Sheet Cover" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tY0-Mg-uCf">
+                                                    <rect key="frame" x="166" y="8" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="hql-yW-eB0"/>
                                                     </constraints>
@@ -2477,6 +2615,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Base Flas SQS" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oV7-Qy-006">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="WSU-WQ-DbB"/>
                                                     </constraints>
@@ -2484,6 +2623,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# AC Units" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LVD-Fm-atV">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="GIo-kx-wF4"/>
                                                     </constraints>
@@ -2508,6 +2648,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Pitch Pans" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tZm-PA-IMi">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="E9H-Q6-tKb"/>
                                                     </constraints>
@@ -2515,6 +2656,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Roof Jacks" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n1V-0D-lpq">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="2BW-00-luv"/>
                                                     </constraints>
@@ -2539,6 +2681,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Drain Scuppers" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jed-Kc-Aj7">
+                                                    <rect key="frame" x="11" y="8" width="278" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="278" id="iwr-vf-R7X"/>
                                                     </constraints>
@@ -2565,6 +2708,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Base Flas SQS" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o1p-eb-dkd">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="MVz-Eb-BJt"/>
                                                     </constraints>
@@ -2572,6 +2716,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Wall Height" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7CM-oV-3hB">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="MKp-8r-aCK"/>
                                                     </constraints>
@@ -2596,6 +2741,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Pipes" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lqW-Sj-QvI">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="20t-hS-0Oq"/>
                                                     </constraints>
@@ -2603,6 +2749,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# AC Units" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6YE-db-9cj">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="7qB-cq-ETO"/>
                                                     </constraints>
@@ -2627,6 +2774,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Foam Depth" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dmF-tI-pD0">
+                                                    <rect key="frame" x="11" y="8" width="278" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="278" id="FCP-iM-hfq"/>
                                                     </constraints>
@@ -2653,6 +2801,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tear-Off Includes" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z2m-ir-Yog">
+                                                    <rect key="frame" x="14" y="7" width="278" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="278" id="Dgx-RB-Jvx"/>
                                                     </constraints>
@@ -2675,6 +2824,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Roof Complexity" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h31-bG-HlD">
+                                                    <rect key="frame" x="12" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="ekb-HL-LGB"/>
                                                     </constraints>
@@ -2682,6 +2832,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Safety Reqs" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RWu-Ua-md8">
+                                                    <rect key="frame" x="163" y="7" width="130" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="130" id="dns-QY-5aS"/>
                                                     </constraints>
@@ -2706,6 +2857,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type of Roof Rec" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Thc-aT-GBA">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="vgE-LU-BGt"/>
                                                     </constraints>
@@ -2713,6 +2865,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Manu Warranty" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aet-WV-0un">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="Dqy-8r-4eG"/>
                                                     </constraints>
@@ -2737,6 +2890,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mill Sheets" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aAI-Bu-bhD">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="AVb-7g-lm0"/>
                                                     </constraints>
@@ -2744,6 +2898,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Slip Sheet Type" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZmU-k2-hQo">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="nok-Uf-cmb"/>
                                                     </constraints>
@@ -2768,6 +2923,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sheet Manu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s29-a4-gSh">
+                                                    <rect key="frame" x="11" y="7" width="278" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="278" id="yD0-M1-cau"/>
                                                     </constraints>
@@ -2790,6 +2946,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Thick Base Insu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DR9-8W-QaT">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="kyX-6e-gr8"/>
                                                     </constraints>
@@ -2797,6 +2954,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Base Insu Apply" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P6n-ZS-rGv">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="Rfb-KB-Z9i"/>
                                                     </constraints>
@@ -2821,6 +2979,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Thick 2nd Insu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GAc-YN-lRf">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="6H1-y5-wQL"/>
                                                     </constraints>
@@ -2828,6 +2987,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="2nd Insu Apply" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2FF-Kx-gHy">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="I01-bq-Kdk"/>
                                                     </constraints>
@@ -2852,6 +3012,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Thick Rec Board" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0A1-rI-ehu">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="RID-14-epH"/>
                                                     </constraints>
@@ -2859,6 +3020,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rec Board Apply" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uKT-AK-m21">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="qZB-gD-iBd"/>
                                                     </constraints>
@@ -2883,6 +3045,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Seam Fast Center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WKf-SG-cnO">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="dmY-RN-Mma"/>
                                                     </constraints>
@@ -2890,6 +3053,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Crickets" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mw2-VQ-oKv">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="9tg-bS-UjA"/>
                                                     </constraints>
@@ -2914,6 +3078,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Perimeter Sheet" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yhh-HI-rLX">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="lcE-lw-rTJ"/>
                                                     </constraints>
@@ -2921,6 +3086,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Pipe Boots" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SNW-yY-kjT">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="Wze-9o-bWh"/>
                                                     </constraints>
@@ -2945,6 +3111,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Feet Walk Pads" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HuE-eB-8HQ">
+                                                    <rect key="frame" x="10" y="8" width="280" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -2969,6 +3136,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tear-Off Includes" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mvb-S0-Jg0">
+                                                    <rect key="frame" x="14" y="7" width="278" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="278" id="WCh-F3-Rc2"/>
                                                     </constraints>
@@ -2991,6 +3159,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Roof Complexity" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zBQ-6S-PfI">
+                                                    <rect key="frame" x="12" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="tN1-ob-D0L"/>
                                                     </constraints>
@@ -2998,6 +3167,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Safety Reqs" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Es0-eY-mls">
+                                                    <rect key="frame" x="163" y="7" width="130" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="130" id="quC-Tx-SYq"/>
                                                     </constraints>
@@ -3022,6 +3192,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type of Roof Rec" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="edh-BI-45b">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="cR0-JW-ewW"/>
                                                     </constraints>
@@ -3029,6 +3200,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Manu Warranty" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dhE-Dr-1Ci">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="DoI-xm-Jeg"/>
                                                     </constraints>
@@ -3053,6 +3225,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mill Sheets" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Jm-c5-uMc">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="6vc-3a-Oap"/>
                                                     </constraints>
@@ -3060,6 +3233,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Slip Sheet Type" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JlC-hs-fZp">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="1uy-8N-q0u"/>
                                                     </constraints>
@@ -3084,6 +3258,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sheet Manu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LrW-8I-s4t">
+                                                    <rect key="frame" x="11" y="7" width="278" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="278" id="Z0D-bO-p3R"/>
                                                     </constraints>
@@ -3106,6 +3281,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Thick Base Insu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6pl-RK-8fM">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="Cxr-zX-SWG"/>
                                                     </constraints>
@@ -3113,6 +3289,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Base Insu Apply" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zzu-Xx-q3g">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="PAO-82-3ag"/>
                                                     </constraints>
@@ -3137,6 +3314,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Thick 2nd Insu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z8M-4r-AOE">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="UOW-mq-Syz"/>
                                                     </constraints>
@@ -3144,6 +3322,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="2nd Insu Apply" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qRj-A7-mqK">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="niC-Dg-NHZ"/>
                                                     </constraints>
@@ -3168,6 +3347,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Thick Rec Board" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1kv-yU-SSG">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="4Yq-6U-cOk"/>
                                                     </constraints>
@@ -3175,6 +3355,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rec Board Apply" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qO7-jY-7xb">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="GPf-ed-7h2"/>
                                                     </constraints>
@@ -3199,6 +3380,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Seam Fast Center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FnC-FO-hKz">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="5qq-1k-q8e"/>
                                                     </constraints>
@@ -3206,6 +3388,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Crickets" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HlI-gb-EQo">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="YZ9-4h-jAd"/>
                                                     </constraints>
@@ -3230,6 +3413,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Perimeter Sheet" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NfZ-Fi-rYY">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="IKf-CU-v2I"/>
                                                     </constraints>
@@ -3237,6 +3421,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Pipe Boots" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="687-og-8kI">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="cg8-61-IG8"/>
                                                     </constraints>
@@ -3261,6 +3446,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Feet Walk Pads" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GPV-C6-gTn">
+                                                    <rect key="frame" x="10" y="8" width="280" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -3285,10 +3471,12 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Base Flash SQS" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g6M-e6-8WJ">
+                                                    <rect key="frame" x="12" y="7" width="138" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# AC Units" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f8y-Bd-kji">
+                                                    <rect key="frame" x="163" y="7" width="130" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="130" id="5ja-fF-DY8"/>
                                                     </constraints>
@@ -3313,6 +3501,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Pitch Pans" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6xB-ql-1MF">
+                                                    <rect key="frame" x="11" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="7Sp-EO-3Fg"/>
                                                     </constraints>
@@ -3320,6 +3509,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Roof Jacks" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rik-1V-imt">
+                                                    <rect key="frame" x="166" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="H5n-Rh-VTL"/>
                                                     </constraints>
@@ -3344,6 +3534,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Drain Leads" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UaQ-pe-Lhq">
+                                                    <rect key="frame" x="13" y="8" width="279" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="279" id="jpE-He-CZu"/>
                                                     </constraints>
@@ -3380,12 +3571,13 @@
         <!--Detail View Controller - Detail-->
         <scene sceneID="24">
             <objects>
-                <viewController storyboardIdentifier="" title="Detail" id="21" customClass="DetailViewController" sceneMemberID="viewController">
+                <viewController title="Detail" id="21" customClass="DetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="22">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Detail view content goes here" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="27">
+                                <rect key="frame" x="20" y="266" width="280" height="17"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" size="system"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -3409,56 +3601,6 @@
             <point key="canvasLocation" x="1922" y="64"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="DetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="detailDescriptionLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="MasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MasterViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="OptionsTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/OptionsTableViewController.h"/>
-        </class>
-        <class className="StaticTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/StaticTableViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="city:"/>
-                <relationship kind="action" name="decimalKeyBoard:"/>
-                <relationship kind="action" name="deckTypeEdit:"/>
-                <relationship kind="action" name="dismissDecimalpad:"/>
-                <relationship kind="action" name="dismissPicker:"/>
-                <relationship kind="action" name="pickerDoneClicked:"/>
-                <relationship kind="action" name="standardKeyBoardDone:"/>
-                <relationship kind="outlet" name="baseFlash" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="city" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="cladScuppers" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="copingFeet" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="corners" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="curbFeet" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="curbUnit" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="deckType" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="drains" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="edgeFeet" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="leadJacks" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="pipes" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="projectName" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="roofSQS" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="scuppers" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="sealantPans" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="skylights" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="skylightsReplace" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="slopeUnit" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="tTopVents" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="wallsFeet" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
