@@ -7,54 +7,63 @@
 //
 
 #import "MasterViewController.h"
-
-#import "DetailViewController.h"
 #import "OptionsTableViewController.h"
 #import "Estimate.h"
+#import "Proposal.h"
+
 
 @class Estimate;
 
 @interface MasterViewController () {
-    NSMutableArray *_objects;
+    //NSMutableArray *_proposals;
 }
 @end
 
 @implementation MasterViewController
 
-- (void)awakeFromNib
-{
-    [super awakeFromNib];
-}
+@synthesize proposals = _proposals;
+@synthesize optionsTableViewController = _optionsTableViewController;
+
+//- (void)awakeFromNib
+//{
+//    [super awakeFromNib];
+//}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Stark Weather";
 	// Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(newProject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
-   
+    
+    //UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(newProject:)];
+    //self.navigationItem.rightBarButtonItem = addButton;
 }
+//-(void)setProposals:(NSMutableArray *)proposals{
+//    _proposals = proposals;
+//}
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
+}
 - (void)newProject:(id)sender{
    [self performSegueWithIdentifier:@"mySegue" sender:self];  
 }
-- (void)insertNewObject:(id)sender
-{
-    if (!_objects) {
-        _objects = [[NSMutableArray alloc] init];
-    }
-    [_objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-}
+//- (void)insertNewObject:(id)sender
+//{
+//    if (!_objects) {
+//        _objects = [[NSMutableArray alloc] init];
+//    }
+//    [_objects insertObject:[NSDate date] atIndex:0];
+//    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+//    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+//}
 
 #pragma mark - Table View
 
@@ -65,15 +74,20 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    NSLog(@"proposal count %lu", (unsigned long)_proposals.count);
+    _proposals = loadedProposals;
+    return _proposals.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    
+    Proposal *doc = [_proposals objectAtIndex:indexPath.row];
+    NSLog(@"proposal %@", doc);
+    cell.textLabel.text = doc.data.title;
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
     return cell;
 }
 
@@ -86,8 +100,10 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [_objects removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        Proposal *doc = [_proposals objectAtIndex:indexPath.row];
+        [doc deleteDoc];
+        [_proposals removeObjectAtIndex:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
     }
@@ -111,15 +127,19 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+
+    if ([[segue identifier] isEqualToString:@"mySegue"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = _objects[indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
+        Proposal *proposal = _proposals[indexPath.row];
+        [[segue destinationViewController] setEstimate:proposal.data];
     }
-    if ([[segue identifier] isEqualToString:@"mySegue"]){
+    if ([[segue identifier] isEqualToString:@"newSegue"]){
         Estimate *estimate = [[Estimate alloc]init];
+        NSLog(@"create estimate %@", estimate);
         [[segue destinationViewController] setEstimate:estimate];
     }
 }
+
+
 
 @end

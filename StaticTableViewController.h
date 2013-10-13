@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 @class Estimate;
+@class Proposal;
 
 @interface StaticTableViewController : UITableViewController<UITextFieldDelegate, UIPickerViewDelegate,UIPickerViewDataSource> {
+    Proposal* doc;
     UIView *release;
     UIButton *done;
     UIPickerView *pickerView;
@@ -18,6 +20,7 @@
     NSMutableArray *deckTypeArray;
 }
 @property (strong, nonatomic) Estimate * estimate;
+@property (strong, nonatomic) Proposal * doc;
 @property (strong, nonatomic) NSArray *optionsArray;
 @property (strong, nonatomic) NSArray *deckTypeArray;
 @property (nonatomic) UIPickerView *pickerView;
@@ -55,6 +58,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *alum_seemsFeet;
 @property (weak, nonatomic) IBOutlet UITextField *alum_sideLaps;
 @property (weak, nonatomic) IBOutlet UITextField *alum_manualFasteners;
+@property (weak, nonatomic) IBOutlet UITextField *gic_ThickBase;
+@property (weak, nonatomic) IBOutlet UITextField *gic_baseapply;
 
 - (IBAction)city:(id)sender;
 - (IBAction)deckTypeEdit:(id)sender;
@@ -67,6 +72,7 @@
 - (IBAction)tearOffEdit:(id)sender;
 - (IBAction)roofComplexEdit:(id)sender;
 - (IBAction)safetyReqsEdit:(id)sender;
+- (IBAction)saveDoc:(id)sender;
 
 
 @end

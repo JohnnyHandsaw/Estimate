@@ -7,12 +7,31 @@
 //
 
 #import "AppDelegate.h"
+#import "MasterViewController.h"
+#import "Proposal.h"
+#import "ProposalDatabase.h"
 
 @implementation AppDelegate
 
+@synthesize window;
+@synthesize navigationController;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+   // NSLog(@"self %@", self);
+    //NSLog(@"master controller %@", self.window.rootViewController);
+    loadedProposals = [ProposalDatabase loadProposals];
+   // MasterViewController *rootController = (MasterViewController *) self.window.rootViewController;
+   // NSLog(@"proposal object %@", rootController);
+   // [rootController setProposals:loadedbugs];
+   // [rootController ]
+    //rootController.proposals = loadedBugs;
+    
+    //NSLog(@"proposal count delegate %lu", (unsigned long)loadedBugs.count);
+    
+    //[window addSubview:navigationController.view];
+   // [window makeKeyAndVisible];
+    
     return YES;
 }
 							

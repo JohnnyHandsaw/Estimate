@@ -8,6 +8,26 @@
 
 #import <Foundation/Foundation.h>
 
+#define ktearOff @ "Tear Off"
+#define kroofComplexity @ "Roof Complex"
+#define ksafetyReqs @ "Safety Reqs"
+#define kroofTypeRec @ "Roof Type Rec"
+#define kmanWarranty @ "Manufacturer Warranty"
+#define kmillSheets @ "Mill Sheets"
+#define ksheetManu @ "Sheet Manu"
+#define kslipSheetType @ "kslipSheetType"
+#define kbaseInsuApply @ "kbaseInsuApply"
+#define kbaseThickness @ "kbaseThickness"
+#define ksecondInsuApply @ "ksecondInsuApply"
+#define ksecondThick @ "ksecondThick"
+#define krecoverApply @ "krecoverApply"
+#define krecoverThickness @ "krecoverThickness"
+#define kseamFastenerInchCenter @ "kseamFastenerInchCenter"
+#define kcrickets @ "kcrickets"
+#define kperimeterSheets @ "kperimeterSheets"
+#define kpipeBoots @  "kpipeBoots"
+#define kwalkPads @ "kwalkPads"
+
 @interface SinglePlyPVC : NSObject
 
 @property (strong) NSString *tearOff;

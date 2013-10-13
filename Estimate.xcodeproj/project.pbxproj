@@ -35,6 +35,8 @@
 		168E7B5217D5D36600D7BD16 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 168E7B5117D5D36600D7BD16 /* MasterViewController.m */; };
 		168E7B5517D5D36600D7BD16 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 168E7B5417D5D36600D7BD16 /* DetailViewController.m */; };
 		168E7B6217D6FB0400D7BD16 /* StaticTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 168E7B6117D6FB0400D7BD16 /* StaticTableViewController.m */; };
+		1690835717FD89E6003B959C /* Proposal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690835617FD89E6003B959C /* Proposal.m */; };
+		1690835A17FD8E4D003B959C /* ProposalDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690835917FD8E4D003B959C /* ProposalDatabase.m */; };
 		16CDFF9E17D84B4500D4B276 /* OptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CDFF9D17D84B4500D4B276 /* OptionsTableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +91,10 @@
 		168E7B5417D5D36600D7BD16 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		168E7B6017D6FB0400D7BD16 /* StaticTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StaticTableViewController.h; path = ../StaticTableViewController.h; sourceTree = "<group>"; };
 		168E7B6117D6FB0400D7BD16 /* StaticTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StaticTableViewController.m; path = ../StaticTableViewController.m; sourceTree = "<group>"; };
+		1690835517FD89E6003B959C /* Proposal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Proposal.h; sourceTree = "<group>"; };
+		1690835617FD89E6003B959C /* Proposal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Proposal.m; sourceTree = "<group>"; };
+		1690835817FD8E4D003B959C /* ProposalDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProposalDatabase.h; sourceTree = "<group>"; };
+		1690835917FD8E4D003B959C /* ProposalDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProposalDatabase.m; sourceTree = "<group>"; };
 		16CDFF9C17D84B4500D4B276 /* OptionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsTableViewController.h; sourceTree = "<group>"; };
 		16CDFF9D17D84B4500D4B276 /* OptionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -179,6 +185,10 @@
 		168E7B5C17D5D39800D7BD16 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1690835517FD89E6003B959C /* Proposal.h */,
+				1690835617FD89E6003B959C /* Proposal.m */,
+				1690835817FD8E4D003B959C /* ProposalDatabase.h */,
+				1690835917FD8E4D003B959C /* ProposalDatabase.m */,
 				1687CA9617E18ED000393F70 /* Estimate.h */,
 				1687CA9717E18ED000393F70 /* Estimate.m */,
 				1687CA9917E18F1500393F70 /* Common.h */,
@@ -285,6 +295,7 @@
 				168E7B5517D5D36600D7BD16 /* DetailViewController.m in Sources */,
 				168E7B6217D6FB0400D7BD16 /* StaticTableViewController.m in Sources */,
 				16CDFF9E17D84B4500D4B276 /* OptionsTableViewController.m in Sources */,
+				1690835A17FD8E4D003B959C /* ProposalDatabase.m in Sources */,
 				1687CA9817E18ED000393F70 /* Estimate.m in Sources */,
 				1687CA9B17E18F1500393F70 /* Common.m in Sources */,
 				1687CA9E17E18F3900393F70 /* Options.m in Sources */,
@@ -300,6 +311,7 @@
 				1687CABC17E19A8300393F70 /* SinglePlyPVC.m in Sources */,
 				1687CABF17E19BEB00393F70 /* SinglePlyTPO.m in Sources */,
 				1687CAC217E19C3900393F70 /* Torch.m in Sources */,
+				1690835717FD89E6003B959C /* Proposal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

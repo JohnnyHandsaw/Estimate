@@ -190,12 +190,12 @@
         case SECTION_OPTIONS:
             if (row == ROW_alumination &&  estimate.dataOptions.alumination == 1)
             {
-               // NSLog(@"load 1");
+                NSLog(@"load 1");
                cell.accessoryType = UITableViewCellAccessoryCheckmark;
             }
             if (row == ROW_builtUpGIC && estimate.dataOptions.builtUpGIC == 1)
             {
-               // NSLog(@"load 2");
+                NSLog(@"load 2");
                 cell.accessoryType = UITableViewCellAccessoryCheckmark;
             }
             if (row == ROW_builtUpGIS && estimate.dataOptions.builtUpGIS == 1)
@@ -254,8 +254,10 @@
         case SECTION_OPTIONS:
             if (row == ROW_alumination)
             {
-                 NSLog(@"select 0");
+                NSLog(@"select 0");
+              
                 if  (estimate.dataOptions.alumination == 0){ estimate.dataOptions.alumination=1;}else{estimate.dataOptions.alumination=0;};
+                  NSLog(@"estimate %@", estimate.dataOptions);
             }
             if (row == ROW_builtUpGIC)
             {

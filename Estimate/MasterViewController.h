@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+@class OptionsTableViewController;
+NSMutableArray *loadedProposals;
 
-@interface MasterViewController : UITableViewController
+@interface MasterViewController : UITableViewController{
+    NSMutableArray *_proposals;
+    OptionsTableViewController *_optionsTableViewController;
+    
+}
+
+@property (retain) NSMutableArray *proposals;
+@property (retain) OptionsTableViewController *optionsTableViewController;
+
 
 @end

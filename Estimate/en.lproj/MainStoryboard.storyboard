@@ -8,7 +8,7 @@
         <!--Navigation Controller-->
         <scene sceneID="11">
             <objects>
-                <navigationController id="3" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="4">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -57,7 +57,13 @@
                             <outlet property="delegate" destination="12" id="15"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Saved Estimates" id="36"/>
+                    <navigationItem key="navigationItem" title="Saved Estimates" id="36">
+                        <barButtonItem key="rightBarButtonItem" title="+" id="FPd-Qq-haR">
+                            <connections>
+                                <segue destination="kSr-bC-gP5" kind="push" identifier="newSegue" id="SBi-8X-F1w"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
             </objects>
@@ -1135,21 +1141,29 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Thick Base Insu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="weQ-Gt-6bL">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="1200" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Thick Base Insu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="weQ-Gt-6bL">
                                                     <rect key="frame" x="21" y="7" width="137" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="LY4-Sy-5WD"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="fieldChange:" destination="6Te-aK-5V0" eventType="editingChanged" id="jQU-eL-CTs"/>
+                                                        <outlet property="delegate" destination="6Te-aK-5V0" id="GY3-PU-805"/>
+                                                    </connections>
                                                 </textField>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Base Insu Apply" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JrF-AC-xML">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="1201" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Base Insu Apply" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JrF-AC-xML">
                                                     <rect key="frame" x="176" y="7" width="126" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="126" id="puq-8b-SD0"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="fieldChange:" destination="6Te-aK-5V0" eventType="editingChanged" id="C8c-vS-4Op"/>
+                                                        <outlet property="delegate" destination="6Te-aK-5V0" id="Ucf-SU-uhr"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -3485,7 +3499,13 @@
                             <outlet property="delegate" destination="6Te-aK-5V0" id="8WQ-ry-mhp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="VML-5D-8ZO"/>
+                    <navigationItem key="navigationItem" id="VML-5D-8ZO">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="BZ6-zv-Sc9">
+                            <connections>
+                                <action selector="saveDoc:" destination="6Te-aK-5V0" id="SMK-NB-g7o"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="alum_manualFasteners" destination="1iN-P6-r3b" id="Rd8-9y-Uet"/>
                         <outlet property="alum_seemsFeet" destination="CsB-DZ-z6K" id="PDI-9p-cJ4"/>
@@ -3500,6 +3520,8 @@
                         <outlet property="deckType" destination="a3c-QN-3uv" id="CnW-Kp-kN9"/>
                         <outlet property="drains" destination="EZi-8R-Mhq" id="V9U-1u-XgB"/>
                         <outlet property="edgeFeet" destination="Ocj-aN-aiq" id="bkl-df-ff1"/>
+                        <outlet property="gic_ThickBase" destination="weQ-Gt-6bL" id="e4R-oM-DmF"/>
+                        <outlet property="gic_baseapply" destination="JrF-AC-xML" id="W84-tZ-1F0"/>
                         <outlet property="leadJacks" destination="rHl-xb-iLm" id="nnF-58-NMM"/>
                         <outlet property="pipes" destination="6Bx-7k-wUg" id="Pp0-XQ-a9A"/>
                         <outlet property="projectName" destination="xt8-a7-8Jd" id="L3g-g8-vkK"/>
@@ -3562,4 +3584,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="SBi-8X-F1w"/>
+    </inferredMetricsTieBreakers>
 </document>

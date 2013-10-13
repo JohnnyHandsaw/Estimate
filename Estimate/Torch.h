@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+#define kbaseFlashSQS @ "Base Flash"
+#define kacUnits @ "AC Units"
+#define kpitchPans @ "Pitch Pans"
+#define kroofJacks @ "Roof Jacks"
+#define kdrainLeads @ "Drain Leads"
+
 @interface Torch : NSObject
 
 @property (assign) float baseFlashSQS;

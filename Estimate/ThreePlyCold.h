@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+#define kbaseFlashSQS @ "Base Flash"
+#define kacUnits @ "AC Units"
+#define kpitchPans @ "Pitch Pans"
+#define kroofJacks @ "Roof Jacks"
+#define kdrainScuppers @ "Drain Scuppers"
 @interface ThreePlyCold : NSObject
 
 @property (assign) float baseFlashSQS;

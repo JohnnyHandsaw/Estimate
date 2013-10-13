@@ -23,6 +23,7 @@
 #import "SinglePlyTPO.h"
 #import "SinglePlyPVC.h"
 #import "Torch.h"
+#import "Proposal.h"
 
 @interface StaticTableViewController ()
 
@@ -31,6 +32,7 @@
 @implementation StaticTableViewController
 
 @synthesize estimate;
+@synthesize doc;
 
 @synthesize optionsArray;
 @synthesize pickerView;
@@ -69,6 +71,9 @@
 @synthesize alum_seemsFeet;
 @synthesize alum_sideLaps;
 @synthesize alum_manualFasteners;
+
+@synthesize gic_baseapply;
+@synthesize gic_ThickBase;
 
 #define SECTION_alumination 1
 #define SECTION_builtUpGIC 2
@@ -109,6 +114,8 @@
 #define ALUM_seamsFeet 1103
 #define ALUM_sideLapsRepair 1104
 #define ALUM_manualFasteners 1105
+#define GIC_ThickBase 1200
+#define GIC_baseapply 1201
 
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -922,8 +929,19 @@
             NSLog(@"common %d",self.estimate.dataAlumination.manualFasteners);
             NSLog(@"common %@",self.alum_manualFasteners.text);
             break;
-        }
+        case GIC_ThickBase:
+            self.estimate.dataBuiltUpPlyGIC.baseThickness = self.gic_ThickBase.text.floatValue;
+            NSLog(@"common %f",self.estimate.dataBuiltUpPlyGIC.baseThickness);
+            NSLog(@"common %@",self.gic_ThickBase.text);
+            break;
+        case GIC_baseapply:
+            self.estimate.dataBuiltUpPlyGIC.baseInsuApply = self.gic_baseapply.text;
+            NSLog(@"common %@",self.estimate.dataBuiltUpPlyGIC.baseInsuApply);
+            NSLog(@"common %@",self.gic_baseapply.text);
+            break;
+    }
 }
+
 
 - (IBAction)tearOffEdit:(id)sender {
     deckTypeArray = [[NSMutableArray alloc]initWithObjects:@"NO TEAR OFF",@"1 layer",@"1 layer + insulation under 2''", @"1 layer + insulation 2+",@"2 layers",@"2 layers with Gravel",@"Foam (Direct to Plywood)",@"Shingles",@"Tile",nil];
@@ -1013,6 +1031,16 @@
     safetyReqs.inputAccessoryView = release;
     
     
+}
+
+- (IBAction)saveDoc:(id)sender {
+     NSLog(@"doc %@", estimate.dataCommon);
+    Proposal *newdoc = [[Proposal alloc]initWithTitle:self.title estimate:estimate];
+    
+    NSLog(@"doc %@", newdoc);
+     NSLog(@"doc %@", newdoc.data.dataCommon.jobName);
+    
+    [newdoc saveData];
 }
 
 -(void)tap:(UIGestureRecognizer*)gr{

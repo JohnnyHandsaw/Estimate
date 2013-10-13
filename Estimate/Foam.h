@@ -7,6 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#define kbaseFlashSQS @ "Base Flash"
+#define kwallHeight@ "Wall Height"
+#define kpipes @ "Pipes"
+#define kacUnits @ "AC Units"
+#define kfoamDepth @ "Foam Depth"
 
 @interface Foam : NSObject
 

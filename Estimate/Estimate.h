@@ -23,7 +23,24 @@
 @class SinglePlyTPO;
 @class Torch;
 
-@interface Estimate : NSObject
+@interface Estimate : NSObject <NSCoding>{
+    NSString *title;
+    Options *dataOptions;
+    Common *dataCommon;
+    Alumination *dataAlumination;
+    BuiltUpPlyGNS *dataBuiltUpPlyGNS;
+    BuiltUpPlyGIS *dataBuiltUpPlyGIS;
+    BuiltUpPlyGIC *dataBuiltUpPlyGIC;
+    BuiltUpFileGNC *dataBuiltUpPlyGNC;
+    Coatings  *dataCoatings;
+    DuroLast  *dataDuroLast;
+    ThreePlyCold  *dataThreePlyCold;
+    Foam  *dataFoam;
+    SinglePlyPVC  *dataSinglePlyPVC;
+    SinglePlyTPO  *dataSinglePlyTPO;
+    Torch  *dataTorch;
+    
+}
 
 @property (strong) NSString *title;
 @property (strong) Options *dataOptions;
@@ -41,6 +58,7 @@
 @property (strong) SinglePlyTPO  *dataSinglePlyTPO;
 @property (strong) Torch  *dataTorch;
 
+-(id)initWithTitle:(NSString*)title options:(Options *)options common:(Common*)common alumination:(Alumination*)alumination builtupgns:(BuiltUpPlyGNS*)builtupgns builtupgis:(BuiltUpPlyGIS*)builtupgis builtupgic:(BuiltUpPlyGIC*)builtupgic builtupgnc:(BuiltUpFileGNC*)builtupgnc coatings:(Coatings*)coatings durolast:(DuroLast*)durolast threeply:(ThreePlyCold*)threeply foam:(Foam *)foam singlepvc:(SinglePlyPVC*)singlepvc singletpo:(SinglePlyTPO*)singletpo torch:(Torch*)torch;
 
 //- (id)initWithObjects:(NSObject*)estimate options:(Options*)options common:(Common*)common
 //    alumination:(Alumination*)alumination builtUpPlyGNS:(BuiltUpPlyGNS*)builtUpPlyGNS
