@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1648C03D180B610400BAF47D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1648C03C180B610400BAF47D /* MessageUI.framework */; };
 		1687CA9817E18ED000393F70 /* Estimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1687CA9717E18ED000393F70 /* Estimate.m */; };
 		1687CA9B17E18F1500393F70 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 1687CA9A17E18F1500393F70 /* Common.m */; };
 		1687CA9E17E18F3900393F70 /* Options.m in Sources */ = {isa = PBXBuildFile; fileRef = 1687CA9D17E18F3900393F70 /* Options.m */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1648C03C180B610400BAF47D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		1687CA9617E18ED000393F70 /* Estimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Estimate.h; sourceTree = "<group>"; };
 		1687CA9717E18ED000393F70 /* Estimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Estimate.m; sourceTree = "<group>"; };
 		1687CA9917E18F1500393F70 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1648C03D180B610400BAF47D /* MessageUI.framework in Frameworks */,
 				168E7B3617D5D36600D7BD16 /* UIKit.framework in Frameworks */,
 				168E7B3817D5D36600D7BD16 /* Foundation.framework in Frameworks */,
 				168E7B3A17D5D36600D7BD16 /* CoreGraphics.framework in Frameworks */,
@@ -133,6 +136,7 @@
 		168E7B3417D5D36600D7BD16 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1648C03C180B610400BAF47D /* MessageUI.framework */,
 				168E7B3517D5D36600D7BD16 /* UIKit.framework */,
 				168E7B3717D5D36600D7BD16 /* Foundation.framework */,
 				168E7B3917D5D36600D7BD16 /* CoreGraphics.framework */,

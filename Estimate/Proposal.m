@@ -57,7 +57,7 @@
     if ((self = [super init])) {
 
         _data = estimate;
-        title = [title copy];
+        title = estimate.dataCommon.jobName;
     }
     return self;
 }
@@ -91,9 +91,9 @@
     return _data;
     
 }
-- (void)saveData {
+- (NSString * )saveData {
     
-    if (_data == nil) return;
+    if (_data == nil) return @"err";
     
     [self createDataPath];
     
@@ -105,7 +105,7 @@
     [archiver finishEncoding];
     [data writeToFile:dataPath atomically:YES];
 
-
+    return dataPath;
     
 }
 

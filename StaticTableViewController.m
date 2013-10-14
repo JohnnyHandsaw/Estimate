@@ -133,7 +133,40 @@
     [self.view addGestureRecognizer:tapRecognizer];
     
     [super viewDidLoad];
-
+    
+    city.text = estimate.dataCommon.city;
+    projectName.text = estimate.dataCommon.jobName;
+    deckType.text = estimate.dataCommon.deckType;
+    
+    roofSQS.text = [NSString stringWithFormat:@"%1.6f",estimate.dataCommon.roofSQS];
+    baseFlash.text = [NSString stringWithFormat:@"%1.6f",estimate.dataCommon.baseFlash];
+    wallsFeet.text = [NSString stringWithFormat:@"%1.6f",estimate.dataCommon.wallsFeet];
+    curbFeet.text = [NSString stringWithFormat:@"%1.6f",estimate.dataCommon.curbFeet];
+    edgeFeet.text = [NSString stringWithFormat:@"%1.6f",estimate.dataCommon.edgeFeet];
+    copingFeet.text = [NSString stringWithFormat:@"%1.6f",estimate.dataCommon.copingFeet];
+    curbUnit.text = [NSString stringWithFormat:@"%d",estimate.dataCommon.curbUnit];
+    slopeUnit.text = [NSString stringWithFormat:@"%d",estimate.dataCommon.slopeUnit];
+    leadJacks.text = [NSString stringWithFormat:@"%d",estimate.dataCommon.leadJacks];
+    sealantPans.text = [NSString stringWithFormat:@"%d",estimate.dataCommon.sealantPans];
+    drains.text = [NSString stringWithFormat:@"%d",estimate.dataCommon.drains];
+    pipes.text = [NSString stringWithFormat:@"%d",estimate.dataCommon.pipes];
+    cladScuppers.text = [NSString stringWithFormat:@"%d",estimate.dataCommon.cladScuppers];
+    scuppers.text = [NSString stringWithFormat:@"%d",estimate.dataCommon.scuppers];
+    tTopVents.text = [NSString stringWithFormat:@"%d",estimate.dataCommon.tTopVents];
+    corners.text = [NSString stringWithFormat:@"%d",estimate.dataCommon.corners];
+    skylights.text = [NSString stringWithFormat:@"%d",estimate.dataCommon.skylights];
+    skylightsReplace.text = [NSString stringWithFormat:@"%d",estimate.dataCommon.skylightsReplace];
+    
+    tearOff.text = estimate.dataAlumination.tearOff;
+    roofComplex.text = estimate.dataAlumination.roofComplexity;
+    safetyReqs.text = estimate.dataAlumination.safetyReqs;
+    alum_seemsFeet.text = [NSString stringWithFormat:@"%1.6f",estimate.dataAlumination.seamsFeet];
+    alum_sideLaps.text = [NSString stringWithFormat:@"%d",estimate.dataAlumination.sideLapsRepair];
+    alum_manualFasteners.text = [NSString stringWithFormat:@"%d",estimate.dataAlumination.manualFasteners];
+   // gic_ThickBase.text = estimate.dataAlumination.;
+  //  gic_baseapply.text = estimate.dataAlumination.city;
+    
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -822,6 +855,7 @@
     switch ([sender tag]) {
         case COMMON_JOBNAME:
             self.estimate.dataCommon.jobName= self.projectName.text;
+            self.estimate.title = self.projectName.text;
             NSLog(@"common change %@",self.estimate.dataCommon.jobName);
             break;
         case COMMON_ROOFSQS:
@@ -1032,16 +1066,47 @@
     
     
 }
-
-- (IBAction)saveDoc:(id)sender {
+-(IBAction)done:(UIStoryboardSegue *)segue {
+    
+    [self saveDoc];
+    
+    if([[segue identifier] isEqualToString:@"done"]){
+        
+        [self dismissViewControllerAnimated:YES completion:NULL];
+    }
+    
+    
+}
+- (void)saveDoc {
+    
      NSLog(@"doc %@", estimate.dataCommon);
-    Proposal *newdoc = [[Proposal alloc]initWithTitle:self.title estimate:estimate];
+    Proposal *newdoc = [[Proposal alloc]initWithTitle:estimate.dataCommon.jobName estimate:estimate];
     
     NSLog(@"doc %@", newdoc);
-     NSLog(@"doc %@", newdoc.data.dataCommon.jobName);
+     NSLog(@"doc %@", newdoc.data.title);
     
-    [newdoc saveData];
+    NSString* docPath = [newdoc saveData];
+    NSString *subject = [NSString stringWithFormat:@"%@%@" , @"Estimate for ", estimate.dataCommon.jobName];
+    //SEND MAIIL
+        MFMailComposeViewController *mailComposer = [[MFMailComposeViewController alloc] init];
+    mailComposer.mailComposeDelegate = self;
+       // [mailComposer setMailComposeDelegate:self];
+        if ([MFMailComposeViewController canSendMail]) {
+            [mailComposer setToRecipients:[NSArray arrayWithObjects:@"", nil]];
+            [mailComposer setSubject:subject];
+            [mailComposer setMessageBody:@" Enter message here" isHTML:NO];
+            [mailComposer setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+            
+            
+           // NSString *path = [[NSBundle mainBundle] pathForResource:@"Answer" ofType:@"plist"];
+            NSData *myData = [NSData dataWithContentsOfFile:docPath];
+            [mailComposer addAttachmentData:myData mimeType:@"application/xml" fileName:@"data.plist"];
+            
+            [self presentModalViewController:mailComposer animated:YES];
+        }
 }
+
+
 
 -(void)tap:(UIGestureRecognizer*)gr{
     [self.view endEditing:YES];

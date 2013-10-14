@@ -37,7 +37,7 @@
 - (id)initWithDocPath:(NSString *)docPath;
 //- (id)initWithTitle:(NSString*)title options:(Options *)options common:(Common*)common alumination:(Alumination*)alumination builtupgns:(BuiltUpPlyGNS*)builtupgns builtupgis:(BuiltUpPlyGIS*)builtupgis builtupgic:(BuiltUpPlyGIC*)builtupgic builtupgnc:(BuiltUpFileGNC*)builtupgnc coatings:(Coatings*)coatings durolast:(DuroLast*)durolast threeply:(ThreePlyCold*)threeply foam:(Foam *)foam singlepvc:(SinglePlyPVC*)singlepvc singletpo:(SinglePlyTPO*)singletpo torch:(Torch*)torch;
 - (id)initWithTitle:(NSString*)title estimate:(Estimate *)estimate;
-- (void)saveData;
+- (NSString*)saveData;
 - (void)deleteDoc;
 
 @end

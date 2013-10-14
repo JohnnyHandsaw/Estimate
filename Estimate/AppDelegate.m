@@ -15,22 +15,24 @@
 
 @synthesize window;
 @synthesize navigationController;
+@synthesize loadedproposals;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
    // NSLog(@"self %@", self);
     //NSLog(@"master controller %@", self.window.rootViewController);
-    loadedProposals = [ProposalDatabase loadProposals];
-   // MasterViewController *rootController = (MasterViewController *) self.window.rootViewController;
-   // NSLog(@"proposal object %@", rootController);
-   // [rootController setProposals:loadedbugs];
-   // [rootController ]
-    //rootController.proposals = loadedBugs;
+    //loadedProposals = [ProposalDatabase loadProposals];
+    loadedproposals = [ProposalDatabase loadProposals];
+    //MasterViewController *rootController = (MasterViewController *) self.window.rootViewController;
+    // NSLog(@"proposal object %@", rootController);
+    //[rootController setProposals:loadedbugs];
+    //[loadedProposals addObjectsFromArray:loadedbugs];
+   // rootController.proposals = loadedbugs;
     
     //NSLog(@"proposal count delegate %lu", (unsigned long)loadedBugs.count);
     
     //[window addSubview:navigationController.view];
-   // [window makeKeyAndVisible];
+    //[window makeKeyAndVisible];
     
     return YES;
 }

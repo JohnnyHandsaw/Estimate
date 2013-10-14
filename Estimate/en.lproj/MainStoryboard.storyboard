@@ -3500,9 +3500,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="VML-5D-8ZO">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="BZ6-zv-Sc9">
+                        <barButtonItem key="rightBarButtonItem" title="Send" id="BZ6-zv-Sc9">
                             <connections>
-                                <action selector="saveDoc:" destination="6Te-aK-5V0" id="SMK-NB-g7o"/>
+                                <segue destination="NpT-dN-0XO" kind="unwind" identifier="done" unwindAction="done:" id="su9-Zb-LJl"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -3539,6 +3539,7 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eeg-yq-x7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="NpT-dN-0XO" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1241" y="55"/>
         </scene>

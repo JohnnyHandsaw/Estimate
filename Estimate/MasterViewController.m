@@ -5,7 +5,7 @@
 //  Created by Daniel Hahn on 9/3/13.
 //  Copyright (c) 2013 StarkWeather. All rights reserved.
 //
-
+#import "AppDelegate.h"
 #import "MasterViewController.h"
 #import "OptionsTableViewController.h"
 #import "Estimate.h"
@@ -38,9 +38,12 @@
     
     //UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(newProject:)];
     //self.navigationItem.rightBarButtonItem = addButton;
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication]delegate];
+        _proposals = appDelegate.loadedproposals;
+
 }
 //-(void)setProposals:(NSMutableArray *)proposals{
-//    _proposals = proposals;
+//    proposals = proposals;
 //}
 
 - (void)didReceiveMemoryWarning
@@ -74,8 +77,9 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"proposal count %lu", (unsigned long)_proposals.count);
-    _proposals = loadedProposals;
+
+    //_proposals = loadedProposals;
+        NSLog(@"proposal count %lu", (unsigned long)_proposals.count);
     return _proposals.count;
 }
 
@@ -85,6 +89,7 @@
     
     Proposal *doc = [_proposals objectAtIndex:indexPath.row];
     NSLog(@"proposal %@", doc);
+    NSLog(@"proposal %@", doc.data.title);
     cell.textLabel.text = doc.data.title;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 

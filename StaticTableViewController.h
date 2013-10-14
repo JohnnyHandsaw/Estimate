@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
 @class Estimate;
 @class Proposal;
 
@@ -72,7 +73,6 @@
 - (IBAction)tearOffEdit:(id)sender;
 - (IBAction)roofComplexEdit:(id)sender;
 - (IBAction)safetyReqsEdit:(id)sender;
-- (IBAction)saveDoc:(id)sender;
 
-
+-(IBAction)done:(UIStoryboardSegue*)segue;
 @end
