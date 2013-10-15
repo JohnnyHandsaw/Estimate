@@ -13,6 +13,7 @@ NSMutableArray *loadedProposals;
 @interface MasterViewController : UITableViewController{
     NSMutableArray *_proposals;
     OptionsTableViewController *_optionsTableViewController;
+    //AppDelegate *appDelegate;
     
 }
 

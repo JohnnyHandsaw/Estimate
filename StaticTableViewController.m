@@ -24,6 +24,8 @@
 #import "SinglePlyPVC.h"
 #import "Torch.h"
 #import "Proposal.h"
+#import "MasterViewController.h"
+#import "AppDelegate.h"
 
 @interface StaticTableViewController ()
 
@@ -1066,18 +1068,9 @@
     
     
 }
--(IBAction)done:(UIStoryboardSegue *)segue {
-    
-    [self saveDoc];
-    
-    if([[segue identifier] isEqualToString:@"done"]){
-        
-        [self dismissViewControllerAnimated:YES completion:NULL];
-    }
     
     
-}
-- (void)saveDoc {
+- (IBAction)saveDoc:(id)sender {
     
      NSLog(@"doc %@", estimate.dataCommon);
     Proposal *newdoc = [[Proposal alloc]initWithTitle:estimate.dataCommon.jobName estimate:estimate];
@@ -1096,6 +1089,7 @@
             [mailComposer setSubject:subject];
             [mailComposer setMessageBody:@" Enter message here" isHTML:NO];
             [mailComposer setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+            //[mailComposer ]
             
             
            // NSString *path = [[NSBundle mainBundle] pathForResource:@"Answer" ofType:@"plist"];
@@ -1106,7 +1100,32 @@
         }
 }
 
-
+-(void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error{
+    if(error) NSLog(@"ERROR - mailComposeController: %@", [error localizedDescription]);
+    [self dismissModalViewControllerAnimated:YES];
+    
+    MasterViewController *myController = [self.storyboard instantiateViewControllerWithIdentifier:@"Master"];
+    [self.navigationController pushViewController: myController animated:YES];
+    //application:didFinishLaunchingWithOptions:
+    //[self.navigationController popToRootViewControllerAnimated:NO];
+   //  self.window.rootViewController = [[MasterViewController alloc] initWithNibName:nil bundle:nil];
+    
+    //AppDelegate *delegate;
+   // [delegate firstViewController];
+    
+    
+//    AppDelegate *appDelegate = (AppDelegate *)([UIApplication sharedApplication].delegate);
+//    [appDelegate.navigationController popToRootViewControllerAnimated:NO];
+//    UIViewController *topViewController = appDelegate.navigationController.topViewController;
+//    Class class = [topViewController class];
+//    NSString *nibName = topViewController.nibName;
+//    UIViewController *rootViewcontroller = (UIViewController *)([[class alloc] initWithNibName:nibName bundle:nil]);
+//    [appDelegate.navigationController.view removeFromSuperview];
+//    appDelegate.navigationController.viewControllers = [NSArray arrayWithObject:rootViewcontroller];
+//    [appDelegate.window addSubview:appDelegate.navigationController.view];
+//    [appDelegate.window makeKeyAndVisible];
+    return;
+}
 
 -(void)tap:(UIGestureRecognizer*)gr{
     [self.view endEditing:YES];

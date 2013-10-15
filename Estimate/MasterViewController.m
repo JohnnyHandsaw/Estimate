@@ -10,12 +10,14 @@
 #import "OptionsTableViewController.h"
 #import "Estimate.h"
 #import "Proposal.h"
+#import "ProposalDatabase.h"
 
 
 @class Estimate;
 
 @interface MasterViewController () {
     //NSMutableArray *_proposals;
+    //AppDelegate *delegate;
 }
 @end
 
@@ -38,8 +40,14 @@
     
     //UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(newProject:)];
     //self.navigationItem.rightBarButtonItem = addButton;
-    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication]delegate];
-        _proposals = appDelegate.loadedproposals;
+    
+    
+    AppDelegate *delegate = (AppDelegate*)[[UIApplication sharedApplication]delegate];
+    
+    delegate.loadedproposals = [ProposalDatabase loadProposals];
+    //[delegate didFinishLaunchingWithOptions];
+    
+    _proposals = delegate.loadedproposals;
 
 }
 //-(void)setProposals:(NSMutableArray *)proposals{
@@ -53,6 +61,7 @@
 }
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
     [self.tableView reloadData];
 }
 - (void)newProject:(id)sender{

@@ -23,7 +23,7 @@
         <!--Master View Controller - Master-->
         <scene sceneID="18">
             <objects>
-                <tableViewController title="Master" id="12" customClass="MasterViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Master" title="Master" id="12" customClass="MasterViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="13">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3502,7 +3502,7 @@
                     <navigationItem key="navigationItem" id="VML-5D-8ZO">
                         <barButtonItem key="rightBarButtonItem" title="Send" id="BZ6-zv-Sc9">
                             <connections>
-                                <segue destination="NpT-dN-0XO" kind="unwind" identifier="done" unwindAction="done:" id="su9-Zb-LJl"/>
+                                <action selector="saveDoc:" destination="6Te-aK-5V0" id="7wY-ks-2Vs"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -3539,7 +3539,6 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eeg-yq-x7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="NpT-dN-0XO" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1241" y="55"/>
         </scene>

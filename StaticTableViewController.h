@@ -74,5 +74,6 @@
 - (IBAction)roofComplexEdit:(id)sender;
 - (IBAction)safetyReqsEdit:(id)sender;
 
--(IBAction)done:(UIStoryboardSegue*)segue;
+-(IBAction)saveDoc:(id)sender;
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error;
 @end

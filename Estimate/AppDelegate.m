@@ -17,6 +17,7 @@
 @synthesize navigationController;
 @synthesize loadedproposals;
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
    // NSLog(@"self %@", self);
@@ -35,6 +36,10 @@
     //[window makeKeyAndVisible];
     
     return YES;
+}
+-(void)firstViewController{
+    
+    self.window.rootViewController = [[MasterViewController alloc] initWithNibName:nil bundle:nil];
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
