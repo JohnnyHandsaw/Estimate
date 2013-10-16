@@ -41,8 +41,9 @@
 @synthesize dataSinglePlyPVC =  _dataSinglePlyPVC;
 @synthesize dataSinglePlyTPO =  _dataSinglePlyTPO;
 @synthesize dataTorch =  _dataTorch;
+@synthesize saved = _saved;
 
--(id)initWithTitle:(NSString *)title options:(Options *)options common:(Common *)common alumination:(Alumination *)alumination builtupgns:(BuiltUpPlyGNS *)builtupgns builtupgis:(BuiltUpPlyGIS *)builtupgis builtupgic:(BuiltUpPlyGIC *)builtupgic builtupgnc:(BuiltUpFileGNC *)builtupgnc coatings:(Coatings *)coatings durolast:(DuroLast *)durolast threeply:(ThreePlyCold *)threeply foam:(Foam *)foam singlepvc:(SinglePlyPVC *)singlepvc singletpo:(SinglePlyTPO *)singletpo torch:(Torch *)torch {
+-(id)initWithTitle:(NSString *)title options:(Options *)options common:(Common *)common alumination:(Alumination *)alumination builtupgns:(BuiltUpPlyGNS *)builtupgns builtupgis:(BuiltUpPlyGIS *)builtupgis builtupgic:(BuiltUpPlyGIC *)builtupgic builtupgnc:(BuiltUpFileGNC *)builtupgnc coatings:(Coatings *)coatings durolast:(DuroLast *)durolast threeply:(ThreePlyCold *)threeply foam:(Foam *)foam singlepvc:(SinglePlyPVC *)singlepvc singletpo:(SinglePlyTPO *)singletpo torch:(Torch *)torch saved:(int)saved {
     
     if((self = [super init])){
         _title = [title copy];
@@ -60,21 +61,11 @@
         _dataSinglePlyPVC = singlepvc;
         _dataSinglePlyTPO = singletpo;
         _dataTorch = torch;
+        _saved = saved;
         
     }
     return self;
 }
-
-#define kTitleKey @"Title"
-#define kOptionsKey @"Options"
-#define kCommonKey @"Common"
-#define kAluminationKey @"Alumination"
-#define kTitleKey @"Title"
-#define kTitleKey @"Title"
-#define kTitleKey @"Title"
-#define kTitleKey @"Title"
-#define kTitleKey @"Title"
-#define kTitleKey @"Title"
 
 #define kTitleKey @"Title"
 #define kOptionsKey @"Options"
@@ -91,6 +82,7 @@
 #define kSinglePlyTPOKey @"SinglePlyTPO"
 #define kSinglePlyPVCKey @"SinglePlyPVC"
 #define kTorchKey @"Torch"
+#define kSavedKey @"Saved"
 
 -(void)encodeWithCoder:(NSCoder *)encoder{
     [encoder encodeObject:_title forKey:kTitleKey];
@@ -108,6 +100,7 @@
     [encoder encodeObject:_dataSinglePlyPVC forKey:kSinglePlyTPOKey];
     [encoder encodeObject:_dataSinglePlyTPO forKey:kSinglePlyPVCKey];
     [encoder encodeObject:_dataTorch forKey:kTorchKey];
+    [encoder encodeInt:_saved forKey:kSavedKey];
     
 }
 -(id)initWithCoder:(NSCoder *)decoder{
@@ -127,8 +120,9 @@
     SinglePlyPVC  *dataSinglePlyPVC = [decoder decodeObjectForKey:kSinglePlyTPOKey];;
     SinglePlyTPO  *dataSinglePlyTPO = [decoder decodeObjectForKey:kSinglePlyPVCKey];;
     Torch  *dataTorch = [decoder decodeObjectForKey:kTorchKey];
+    int saved = [decoder decodeIntForKey:kSavedKey];
     
-    return [self initWithTitle:title options:dataOptions common:dataCommon alumination:dataAlumination builtupgns:dataBuiltUpPlyGNS builtupgis:dataBuiltUpPlyGIS builtupgic:dataBuiltUpPlyGIC builtupgnc:dataBuiltUpPlyGNC coatings:dataCoatings durolast:dataDuroLast threeply:dataThreePlyCold foam:dataFoam singlepvc:dataSinglePlyPVC singletpo:dataSinglePlyTPO torch:dataTorch];
+    return [self initWithTitle:title options:dataOptions common:dataCommon alumination:dataAlumination builtupgns:dataBuiltUpPlyGNS builtupgis:dataBuiltUpPlyGIS builtupgic:dataBuiltUpPlyGIC builtupgnc:dataBuiltUpPlyGNC coatings:dataCoatings durolast:dataDuroLast threeply:dataThreePlyCold foam:dataFoam singlepvc:dataSinglePlyPVC singletpo:dataSinglePlyTPO torch:dataTorch saved:saved];
 }
 
 //
@@ -169,6 +163,7 @@
         self.dataSinglePlyPVC =  [[SinglePlyPVC alloc]init];
         self.dataSinglePlyTPO =  [[SinglePlyTPO alloc]init];
         self.dataTorch =  [[Torch alloc]init];
+        self.saved = 0;
     }
     return self;
 }

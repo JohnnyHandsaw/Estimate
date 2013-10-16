@@ -25,6 +25,8 @@
 @synthesize counterFlashingNew = counterFlashingNew;
 @synthesize scuppersNew = scuppersNew;
 @synthesize penetrationsSeal = penetrationsSeal;
+@synthesize smallChemCurb = smallChemCurb;
+@synthesize largeChemCurb = largeChemCurb;
 
 -(void) encodeWithCoder:(NSCoder *)encoder
 {
@@ -43,6 +45,8 @@
     [encoder encodeObject:counterFlashingNew forKey:kcounterFlashingNew];
     [encoder encodeObject:scuppersNew forKey:kscupperNew];
     [encoder encodeInt:penetrationsSeal forKey:kpenetrationsSeal];
+    [encoder encodeInt:smallChemCurb forKey:ksmallChemCurb];
+    [encoder encodeInt:largeChemCurb forKey:klargeChemCurb];
 }
 -(id)initWithCoder:(NSCoder *)decoder
 {
@@ -62,6 +66,8 @@
         self.counterFlashingNew = [decoder decodeObjectForKey:kcounterFlashingNew];
         self.scuppersNew = [ decoder decodeObjectForKey:kscupperNew];
         self.penetrationsSeal= [ decoder decodeIntForKey:kpenetrationsSeal];
+        self.smallChemCurb= [ decoder decodeIntForKey:ksmallChemCurb];
+        self.largeChemCurb= [ decoder decodeIntForKey:klargeChemCurb];
     }
     return self;
 }

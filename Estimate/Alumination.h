@@ -24,4 +24,6 @@
 @property (assign) int sideLapsRepair;
 @property (assign) int manualFasteners;
 
+
+
 @end

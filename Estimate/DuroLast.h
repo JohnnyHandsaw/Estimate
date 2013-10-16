@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#define kwallSQS @ "Wall SQS"
 #define kwallHeight @ "Wall Height"
 #define kcurbFlashings @ "Number of Curb Flashings"
 #define kacUnits @ "Number of A/C Units"
@@ -29,7 +29,7 @@
 #define ksheetsCoverBoard @ "Number of Sheets Cover Board"
 
 @interface DuroLast : NSObject
-
+@property (assign) float wallSQS;
 @property (assign) float wallHeight;
 @property (assign) int curbFlashings;
 @property (assign) int acUnits;

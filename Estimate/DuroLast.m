@@ -9,7 +9,7 @@
 #import "DuroLast.h"
 
 @implementation DuroLast
-
+@synthesize wallSQS = wallSQS;
 @synthesize wallHeight = wallHeight;
 @synthesize curbFlashings = curbFlashings;
 @synthesize acUnits = acUnits;
@@ -32,6 +32,7 @@
 
 -(void) encodeWithCoder:(NSCoder *)encoder
 {
+    [encoder encodeFloat:wallSQS forKey: kwallSQS ];
     [encoder encodeFloat:wallHeight forKey: kwallHeight ];
     [encoder encodeInt:curbFlashings forKey:kcurbFlashings];
     [encoder encodeInt:acUnits forKey:kacUnits];
@@ -56,6 +57,7 @@
 {
     if (self = [super init])
     {
+         self.wallSQS = [ decoder decodeFloatForKey:kwallSQS];
         self.wallHeight = [ decoder decodeFloatForKey:kwallHeight];
         self.curbFlashings = [ decoder decodeIntForKey:kcurbFlashings];
         self.acUnits = [ decoder decodeIntForKey:kacUnits];

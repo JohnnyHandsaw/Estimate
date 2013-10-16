@@ -44,5 +44,6 @@
 @property (strong) NSString *counterFlashingNew;
 @property (strong) NSString *scuppersNew;
 @property (assign) int penetrationsSeal;
-
+@property (assign) int smallChemCurb;
+@property (assign) int largeChemCurb;
 @end

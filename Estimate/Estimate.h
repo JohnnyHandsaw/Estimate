@@ -39,6 +39,7 @@
     SinglePlyPVC  *dataSinglePlyPVC;
     SinglePlyTPO  *dataSinglePlyTPO;
     Torch  *dataTorch;
+     int saved;
     
 }
 
@@ -57,8 +58,9 @@
 @property (strong) SinglePlyPVC  *dataSinglePlyPVC;
 @property (strong) SinglePlyTPO  *dataSinglePlyTPO;
 @property (strong) Torch  *dataTorch;
+@property  int saved;
 
--(id)initWithTitle:(NSString*)title options:(Options *)options common:(Common*)common alumination:(Alumination*)alumination builtupgns:(BuiltUpPlyGNS*)builtupgns builtupgis:(BuiltUpPlyGIS*)builtupgis builtupgic:(BuiltUpPlyGIC*)builtupgic builtupgnc:(BuiltUpFileGNC*)builtupgnc coatings:(Coatings*)coatings durolast:(DuroLast*)durolast threeply:(ThreePlyCold*)threeply foam:(Foam *)foam singlepvc:(SinglePlyPVC*)singlepvc singletpo:(SinglePlyTPO*)singletpo torch:(Torch*)torch;
+-(id)initWithTitle:(NSString*)title options:(Options *)options common:(Common*)common alumination:(Alumination*)alumination builtupgns:(BuiltUpPlyGNS*)builtupgns builtupgis:(BuiltUpPlyGIS*)builtupgis builtupgic:(BuiltUpPlyGIC*)builtupgic builtupgnc:(BuiltUpFileGNC*)builtupgnc coatings:(Coatings*)coatings durolast:(DuroLast*)durolast threeply:(ThreePlyCold*)threeply foam:(Foam *)foam singlepvc:(SinglePlyPVC*)singlepvc singletpo:(SinglePlyTPO*)singletpo torch:(Torch*)torch saved:(int)saved;
 
 //- (id)initWithObjects:(NSObject*)estimate options:(Options*)options common:(Common*)common
 //    alumination:(Alumination*)alumination builtUpPlyGNS:(BuiltUpPlyGNS*)builtUpPlyGNS
